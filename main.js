@@ -147,6 +147,6 @@ var portfolioSwiper = new Swiper('.portfolio-details-slider.swiper', {
   speed: 800, // smooth transition speed
 });
 /*===Portfolio details slider end===*/
-alert('my js is running');
+alert('js is running 12:41pm');
 
 /*========END OF FILE=======*/
