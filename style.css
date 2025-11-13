@@ -251,7 +251,7 @@ li.dropdown:has(#toggle-3:checked) > ul {
      
 /*======Hero section start====*/ 
 #hero {
-	overflow-x: hidden;
+	overflow: hidden;
 	width: 100%;
 	height: 100vh;
 }
