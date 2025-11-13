@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Otomee - A web developer</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+		<!--favicons-->
+	<link href="images/favicon.png" rel="icon">
+	<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+		<!--fonts-->
+		
+		<!--vendor css files-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+		
+<!--js file-->
+<script src="main.js" defer></script>
+  
+<!-- AOS Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+  <!-- AOS Library JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+<!-- Glightbox CSS -->
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!--main css file-->
+<link href="style.css" rel="stylesheet">	  
+</head>
+
+<body class="portfolio-details-page">
+	 
+<input type="checkbox" id="toggle">
+		<div class="label-container">
+       <label for="toggle" id="label-1">&#9781; </label>
+       <label for="toggle" id="label-2">&#10005; </label>       
+  </div>
+  
+<header id="header">
+	<i class="header-toggle"><i/>	
+<br/>	       
+		<div class="profile-img">
+			<img src="images/my-profile-img.jpg" alt="" class="img-fluid"/> 
+		</div>
+		
+		<a href="index.html" class="sitename-a">
+			<h1 class="sitename">Alex Smith</h1> 
+		</a>
+		
+		<div class="social-links">
+			<a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+			<a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#" class="skype"><i class="fa-brands fa-skype"></i></a>
+			<a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+		</div>
+		
+		<nav id="navmenu">
+			<ul>
+				<li><a href="index.html#hero" class="active"><i class="fa-regular fa-house"></i>Home</a></li>
+				<li><a href="index.html#about"><i class="fa-regular fa-user"></i>About</a></li>
+				<li><a href="index.html#resume"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
+				<li><a href="index.html#portfolio"><i class="fa-regular fa-images"></i>Portfolio</a></li>
+				<li><a href="index.html#services"><i class="fa-regular fa-compass"></i>Services</a></li>
+				<li class="dropdown"><a href="#"><i class="fa-regular fa-rectangle-list"></i><span>Dropdown</span> <i class="bi bi-chevron-down"> 
+				</i>
+				<!--drop down toggle-->		
+				<input type="checkbox" id="toggle-2">
+		<div class="label-container-2">
+       <label for="toggle-2" id="label-3">&#9660; </label>
+       <label for="toggle-2" id="label-4">&#9650; </label>       
+       </div>
+				</a>        
+				<ul>
+					<li><a href="#">Dropdown 1 </a></li>
+					<li class="dropdown"><a href="#"><span>Deep Dropdown </span> <i class="bi bi-chevron-down"></i>
+	<!--deep drop down toggle-->		
+				<input type="checkbox" id="toggle-3">
+		<div class="label-container-3">
+       <label for="toggle-3" id="label-5">&#9660; </label>
+       <label for="toggle-3" id="label-6">&#9650; </label>       
+ </div>
+					</a>
+					<ul>
+						<li><a href="#">Deep Dropdown 1<a/></li>
+						<li><a href="#">Deep Dropdown 2<a/></li>
+						<li><a href="#">Deep Dropdown 3<a/></li>
+						<li><a href="#">Deep Dropdown 4<a/></li>
+						<li><a href="#">Deep Dropdown 5<a/></li>					
+					</ul>
+					</li>
+					<li><a href="#">Dropdown 2</a></li>
+					<li><a href="#">Dropdown 3</a></li>
+					<li><a href="#">Dropdown 4</a></li>
+				</ul>
+				</li> &nbsp;
+				<li><a href="#contact"><i class="fa-regular fa-envelope"></i>Contact </a></li>
+			</ul>
+		</nav>
+</header>
+
+<main class="main">
+	
+<!--page title start-->
+<div class="page-title">
+	<div class="container">
+		<h1>Portfolio Details</h1> 
+		<nav class="breadcrumbs">
+			<ol>
+				<li><a href="index.html">Home </a></li>
+				<li class="current">/ Portfolio Details</li>
+			</ol>
+		</nav>
+	</div> 
+</div>
+<!--page title end-->
+	
+<!--Portfolio details section start-->
+<section id="portfolio-details">
+	<div class="container" data-aos="fade-up" data-aos-delay="100">
+		<div class="portfolio-details-slider swiper">
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-slide">
+					<img src="images/app-1.jpg" alt="" class="portfolio-image"/> 
+				</div>
+				
+				<div class="swiper-slide">
+					<img src="images/product-1.jpg" alt="" class="portfolio-image"/> 
+				</div>
+				
+				<div class="swiper-slide">
+					<img src="images/branding-1.jpg" alt="" class="portfolio-image"/> 
+				</div>
+				
+				<div class="swiper-slide">
+					<img src="images/books-1.jpg" alt="" class="portfolio-image"/> 
+				</div>
+				
+			</div>
+			<div class="swiper-pagination"> </div> 
+		</div> 
+	</div>
+	
+	
+<div class="portfolio-details-info" data-aos="fade-up" data-aos-delay="200">
+	<h3>Project information</h3> 
+	<ul> 
+	 <li><strong>Category</strong>: Web design</li>
+	 <li><strong>Client</strong>: Asu Company</li>
+	 <li><strong>Project date</strong>: 01 March, 2020</li>
+	 <li><strong>Project URL</strong>:<a href="#"> www.example.com</a></li>
+	</ul>
+</div>
+
+<div class="portfolio-description" data-aos="fade-up" data-aos-delay="300"> 
+ <h2>Brand Identity and Visual Design Project</h2>
+<p>
+This project involved creating a modern and memorable brand identity for a lifestyle startup. 
+From initial concept sketches to the final logo and color system, the design focuses on 
+clarity, balance, and a strong visual presence. The final deliverables included a complete 
+brand style guide, social media assets, and web-ready visuals aligned with the client’s vision.
+</p>
+</div>
+    <hr class="basic-hr"/>
+<div class="portfolio-description" data-aos="fade-up" data-aos-delay="400"> 
+<h2>Responsive Web Application for Task Management</h2>
+<p>
+Developed a full-stack web app that helps teams organize tasks and track progress in real time. 
+Built with React, Node.js, and MongoDB, the platform features an intuitive interface, live updates, 
+and secure user authentication. The project emphasizes performance, accessibility, and clean UI design.
+</p>
+</div>
+    <hr class="basic-hr"/>
+<div class="portfolio-description" data-aos="fade-up" data-aos-delay="400">
+	<h2>Urban Portrait Series – Light, Mood & Character</h2>
+<p>
+A visual storytelling project exploring personality and emotion through urban portrait photography. 
+Shot entirely with natural light, the series captures raw expressions and everyday beauty within 
+city environments. Post-production focused on tone balance and preserving authentic skin tones.
+</p>
+
+</div>
+</section>
+<!--Portfolio details section end-->
+</main>
+
+<footer id="footer">
+	<div class="container">
+		<div class="copyright"> 
+		 <p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Otomee  &nbsp;</strong>2025 |<span>&nbsp;All Rights Reserved</span> </p>
+		</div>
+		 <div class="credits">
+		 	Designed and developed by&nbsp;<a href="#">Otomee&nbsp;</a>
+		 </div> 
+	</div>
+</footer>
+<!--scroll to top start-->
+<a href="#" id="scroll-top"><i  class="fa-solid fa-arrow-up"></i></a>
+<!--scroll to top end-->
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
