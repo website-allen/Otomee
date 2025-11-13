@@ -251,12 +251,13 @@ li.dropdown:has(#toggle-3:checked) > ul {
      
 /*======Hero section start====*/ 
 #hero {
-	overflow: hidden;
+	overflow-x: hidden;
 	width: 100%;
 	height: 100vh;
 	border: 1px solid red;
 	display: flex;
-	align-items: center
+	align-items: center;
+	position: relative;
 }
 #hero::after {
 	content: "";
@@ -269,11 +270,12 @@ li.dropdown:has(#toggle-3:checked) > ul {
   z-index: 1;
 }
 #hero img {
+	position: relative;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
-	border: 2px solid green;
+	border: 3px solid green;
 }
 #hero div {
 	border: 0px solid red;
