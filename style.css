@@ -251,7 +251,7 @@ li.dropdown:has(#toggle-3:checked) > ul {
      
 /*======Hero section start====*/ 
 #hero {
-	overflow-x: hidden;
+	overflow: hidden;
 	width: 100%;
 	height: 100vh;
 	border: 1px solid red;
@@ -265,17 +265,17 @@ li.dropdown:has(#toggle-3:checked) > ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5); 
   z-index: 1;
-  transform: translateY(-13%);
+  transform: translateY(-%);
 }
 #hero img {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 120vh;
 	object-fit: cover;
-	transform: translateY(-13%);
+	transform: translateY(-9%);
 	border: 3px solid green;
 }
 #hero div {
