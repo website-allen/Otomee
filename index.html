@@ -40,8 +40,9 @@
 <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-<!--main css file-->
-<link href="style.css" rel="stylesheet">	  	
+<!-- css files-->
+<link href="style.css" rel="stylesheet">
+<link href="responsive.css" rel="stylesheet">	  	
 </head>
 <body class="index-page" id="body">
 	
@@ -52,7 +53,7 @@
        </div>
        
 	<header id="header">
-		<i class="header-toggle"><i/>	
+		<i class="header-toggle"></i>	
 <br/>	       
 		<div class="profile-img">
 			<img src="myimages/img-1.jpg" alt="" class="img-fluid"/> 
@@ -77,7 +78,7 @@
 				<li><a href="#resume"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
 				<li><a href="#portfolio"><i class="fa-regular fa-images"></i>Portfolio</a></li>
 				<li><a href="#services"><i class="fa-regular fa-compass"></i>Services</a></li>
-				<li class="dropdown"><a href="#"><i class="fa-regular fa-rectangle-list"></i><span>Dropdown</span> <i class="bi bi-chevron-down"> 
+				<li class="dropdown"><a href="#"><i class="fa-regular fa-rectangle-list"></i><span>Projects</span> <i class="bi bi-chevron-down"> 
 				</i>
 				<!--drop down toggle-->		
 				<input type="checkbox" id="toggle-2">
@@ -87,8 +88,8 @@
        </div>
 				</a>        
 				<ul>
-					<li><a href="#">Dropdown 1 </a></li>
-					<li class="dropdown"><a href="#"><span>Deep Dropdown </span> <i class="bi bi-chevron-down"></i>
+					<li><a href="gamerock.com.ng">GameRock </a></li>
+					<li class="dropdown"><a href="#"><span>mini-projects </span> <i class="bi bi-chevron-down"></i>
 	<!--deep drop down toggle-->		
 				<input type="checkbox" id="toggle-3">
 		<div class="label-container-3">
@@ -97,16 +98,16 @@
  </div>
 					</a>
 					<ul>
-						<li><a href="#">Deep Dropdown 1<a/></li>
-						<li><a href="#">Deep Dropdown 2<a/></li>
-						<li><a href="#">Deep Dropdown 3<a/></li>
-						<li><a href="#">Deep Dropdown 4<a/></li>
-						<li><a href="#">Deep Dropdown 5<a/></li>					
+						<li><a href="#">mini-project 1</a></li>
+						<li><a href="#">mini-project 2</a></li>
+						<li><a href="#">mini-project 3</a></li>
+						<li><a href="#">mini-project 4</a></li>
+						<li><a href="#">mini-project 5</a></li>					
 					</ul>
 					</li>
-					<li><a href="#">Dropdown 2</a></li>
-					<li><a href="#">Dropdown 3</a></li>
-					<li><a href="#">Dropdown 4</a></li>
+					<li><a href="#">project 2</a></li>
+					<li><a href="#">project 3</a></li>
+					<li><a href="#">project 4</a></li>
 				</ul>
 				</li> &nbsp;
 				<li><a href="#contact"><i class="fa-regular fa-envelope"></i>Contact </a></li>
@@ -123,9 +124,9 @@
     <h2>Otomee</h2>
     <p>
       I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span>
-    </p>
+    </p> 
   </div>
-</section>
+</section> 
   <!--Hero section end-->
  
 <!--About section start-->
@@ -146,7 +147,7 @@
  </p>
 		<ul data-aos="fade-right">
 			<li><i class="fa fa-angle-right"> </i>
-<strong>Birthday:</strong> <span>24th April </span> </li>
+<strong>Birthday:</strong> <span>nil</span> </li>
     <li><i class="fa fa-angle-right"> </i>
 <strong>Website:</strong> <span>www.otomee.com</span> </li>
     <li><i class="fa fa-angle-right"> </i>
@@ -154,11 +155,11 @@
     <li><i class="fa fa-angle-right"> </i>
 <strong>City:</strong> <span>Delta state, Nigeria</span> </li>
 			<li><i class="fa fa-angle-right"> </i>
-<strong>Age:</strong> <span>30</span> </li>
+<strong>Age:</strong> <span>18+</span> </li>
    <li><i class="fa fa-angle-right"> </i>
-<strong>Degree:</strong> <span>Master</span> </li>
+<strong>Degree:</strong> <span>Student</span> </li>
    <li><i class="fa fa-angle-right"> </i>
-<strong>Email:</strong> <span>aogadje@gmail.com</span> </li>
+<strong>Email:</strong> <span>otomee357@gmail.com</span> </li>
    <li><i class="fa fa-angle-right"> </i>
 <strong>Freelance:</strong> <span>Available</span> </li>
 		</ul>
@@ -293,14 +294,14 @@
  <!--resume item 2 -->
 		<h3 class="resume-title">Education</h3>
 		<div class="resume-item">
-			<h4>Master of Fine Arts &amp; Graphic Design</h4>
-			<h5>2015 - 2016</h5>
-			<p><em>Rochester Institute of Technology, Rochester, NY</em> </p>
-		<p>Completed a Master’s degree in Fine Arts and Graphic Design, concentrating on visual communication, advanced creative projects, and mastering professional design principles and techniques.
+			<h4>Accounting student</h4>
+			<h5>2021 - present</h5>
+			<p><em>Delta state university, Abraka</em> </p>
+		<p>I am in progress pursuing my bachelor's degree in accounting at Delta state university, Abraka.
  </p>
 		</div>
 	<!--resume item 3 -->
-		<div class="resume-item">
+		<div class="resume-item" style="display:none;">
 			<h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
 			<h5>2010 - 2014</h5>
 			<p><em>Rochester Institute of Technology, Rochester, NY</em> </p>
@@ -311,9 +312,9 @@
  <div data-aos="fade-up" data-aos-delay="200">
 		<h3 class="resume-title">Professional Experience</h3>
 		<div class="resume-item">
-			<h4>Senior graphic design specialist</h4>
+			<h4>Senior web developer</h4>
 			<h5>2019 - Present</h5>
-			<p><em>Experion, New York, NY</em> </p>
+			<p><em>Sapele, Delta state</em> </p>
 		<ul>
 			<li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
 			<li>Delegate tasks to the members of the design team and provide counsel on all aspects of the project.</li>
@@ -325,13 +326,13 @@
  <!--resume item 4 -->
 		<div class="resume-item">
 			<h4>Graphic design specialist</h4>
-			<h5>2017 - 2018</h5>
-			<p><em>Stepping Stone Advertising, New York, NY</em> </p>
+			<h5>2019 - present</h5>
+			<p><em>Sapele, Delta state</em> </p>
 		<ul>
 			<li>Developed numerous marketting programs (logos, brochures, infographics, presentations, and advertisements).</li>
-			<li>Managed up to 5projects or tasks at a given time whikw under pressure </li>
+			<li>Managed up to 5projects or tasks at a given time while under pressure </li>
 			<li>Recommended and consulted with clients on the most appropriate graphic design</li>
-			<li>Created 4+ design presentations and proposals a month for clients and account managers </li>
+			<li>Created 5+ design presentations and proposals a month for clients and account managers </li>
 		</ul>
 		</div>		
 	</div>
@@ -351,10 +352,10 @@
 <!--portfolio filters start-->
 	<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
 		<li data-filter="*" class="filter-active">All</li>
-		<li data-filter=".filter-app">App</li>
-		<li data-filter=".filter-product">Product</li>
-		<li data-filter=".filter-branding">Branding</li>
-		<li data-filter=".filter-books">Books</li>
+		<li data-filter=".filter-app">Website</li>
+		<li data-filter=".filter-product">Mini-projects</li>
+		<li data-filter=".filter-branding">Apps</li>
+		<li data-filter=".filter-books">Graphics</li>
 	</ul>
 <!--portfolio filters end-->
 <div class="isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -366,7 +367,7 @@
   	   		<h4>App 1</h4>
   	   		<p>Lorem ipsum, dolor sit amet consectetur</p>
   	   		<a href="images/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
-  	   		<a href="portfolio-details.html" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
+  	   		<a href="portfolio-details.html" title="More Details" class="details-link"><i class="fa-solid fa- link"></i></a>
   	  	 </div>
   	  	</div>
   	</div>
@@ -769,7 +770,7 @@
 <footer id="footer">
 	<div class="container">
 		<div class="copyright"> 
-		 <p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Otomee  &nbsp;</strong>2025 |<span>&nbsp;All Rights Reserved</span> </p>
+		 <p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Otomee  &nbsp;</strong>2025-<script>document.write(new Date().getFullYear());</script> |<span>&nbsp;All Rights Reserved</span> </p>
 		</div>
 		 <div class="credits">
 		 	Designed and developed by&nbsp;<a href="#">Otomee&nbsp;</a>

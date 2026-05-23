@@ -1,0 +1,131 @@
+/*===desktop start===*/
+@media screen and (min-width: 1024px){
+  .label-container {
+    display: none;
+  }
+  #navmenu ul li a {
+	text-decoration: none;
+	color: #ccc;
+	line-height: 50px;
+	display: inline;  
+}#header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    height: 119px;
+    align-items: center;
+    overflow: visible;
+    background: rgba(0, 0, 0, .8);
+    gap: 8x;
+    overflow: visible;
+}
+#navmenu ul li {
+    display: inline;
+} 
+#navmenu ul {
+    display: flex;
+    gap: 16px;
+}
+.profile-img {
+width: 8%;
+justify-self: left;
+}
+.sitename-a {
+    position: relative;
+    top: 0px;
+}
+.social-links {
+    border: 0px solid red;
+    display: flex;
+    gap: 5px;
+}
+.social-links a{
+    position: relative;
+    top: 0px;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    line-height: 23px;
+}
+#navmenu {
+    position: relative;
+    top:0px;
+    justify-self: center; 
+}
+.label-container-2 {
+    margin-left: 75px;
+    width: 25px;
+    height: 25px;
+    margin-top: -40px;
+}
+
+#navmenu ul ul {
+    width: 0px;
+    overflow: scroll;
+    display: block;
+    position: absolute;
+    right: 8%;
+    z-index: 99;
+}
+li.dropdown:has(#toggle-2:checked) > ul {
+    width: 180px;
+    transition: 0s;
+    max-height: 100vh;
+    overflow: visible;
+}
+#navmenu ul ul li a{
+    display: inline-block; 
+    margin: 0; 
+    padding: 0;
+    line-height: 50px;
+
+}
+#navmenu ul ul ul li a {
+    display: inline-block;
+    line-height: 40px;
+}
+#navmenu ul ul ul {
+    display: block;
+    position: absolute;
+    left: 80px;
+    z-index: 99;
+    top: 100px;
+    
+}
+#navmenu ul ul ul li {
+    margin: 0;
+    padding: 0;
+}
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border: 0px solid red;
+}
+.stats-item:nth-child(odd) {
+    grid-column: 1;
+}
+.stats-item:nth-child(even) {
+    grid-column: 2;
+}
+.isotope-container {
+    width: 100%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#services .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}  
+ }
+/*===desktop end===*/
+@media screen and (min-width: px){
+    
+}
+
+@media screen and (min-width: px){
+    
+}
