@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analogue Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock">
+            <!--Numbers-->
+            <span style="--n:1;">1</span>
+            <span style="--n:2;">2</span>
+            <span style="--n:3;">3</span>
+            <span style="--n:4;">4</span>
+            <span style="--n:5;">5</span>
+            <span style="--n:6;">6</span>
+            <span style="--n:7;">7</span>
+            <span style="--n:8;">8</span>
+            <span style="--n:9;">9</span>
+            <span style="--n:10;">10</span>
+            <span style="--n:11;">11</span>
+            <span style="--n:12;">12</span>
+
+            <!--Hands-->
+            <div class="hand hour" id="hour"></div>
+            <div class="hand minute" id="minute"></div>
+            <div class="hand second" id="second"></div>
+
+            <!--Center Dot-->
+            <div class="center-dot"></div>
+        </div>
+
+        <div class="digital-time" id="digitalTime">00:00:00</div>
+    </div>
+</body>
+</html>
