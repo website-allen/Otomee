@@ -110,20 +110,27 @@ li.dropdown:has(#toggle-2:checked) > ul {
     grid-column: 2;
 }
 .isotope-container {
-    width: 100%; 
+    width: 90%; 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
 }
 
 #services .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }  
 
 .portfolio-item {
-    width: 80%;
+    width: 200px;
+    margin-left: 30px;
 }
+#portfolio .container ul li {
+    font-size: 1.6em;
+    margin-right: 29px;
+}
+
  }
 /*===desktop end===*/
 @media screen and (min-width: px){
