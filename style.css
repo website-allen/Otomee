@@ -198,6 +198,8 @@ li.dropdown:has(#toggle-2:checked) > ul {
  position: absolute;
  display: block;
  left: 100px;
+ background: rgba(0, 0, 0, .6);
+ border-radius: 10px;
 }
 
 #label-5 {
@@ -475,8 +477,14 @@ li.dropdown:has(#toggle-3:checked) > ul {
   rgba(81, 157, 255, 0.2)
 );
 	font-style: normal;
-	padding: 15px;
 	width: 100%;
+}
+#portfolio .container {
+	border: 1px solid rgb(103, 99, 99);
+	box-shadow: 0 0 15px rgba(65, 66, 65, 0.95);
+	border-radius: 8px;
+	margin: 0 auto;
+	width: 90%;
 }
 #portfolio .container ul li {
 	list-style: none;
@@ -489,8 +497,20 @@ li.dropdown:has(#toggle-3:checked) > ul {
 	color: #968FF8;
 }
 .portfolio-item {
-	border: 0px solid red;
-	margin-bottom: 20px;
+	border: 0px solid rgb(0, 0, 255);
+	margin: 30px auto;
+	width: 250px;
+	height: 200px;
+	border-radius: 2px 10px;
+}
+.portfolio-item::after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: rgb(137, 133, 133);
+	position: relative;
+	display: block;
+	margin: 20px auto;
 }
 .portfolio-content {
 	border: 0px solid green;
@@ -498,22 +518,24 @@ li.dropdown:has(#toggle-3:checked) > ul {
 	justify-content: center;
 	display: flex;
 	position: relative;
+	overflow-x: visible;
 }
 .portfolio-image {
-	width: 94%;
-	height: 100%;
+	width: 250px;
+	height: 200px;
 	display: block;
 	transition: .3s ease-in-out;
-	margin: 0 auto;
+	border-radius: 2px 10px;
 }
 .portfolio-info {
 	border: 0px solid purple;
 	position: absolute;
 	color: #fff;
     inset: 0;
- text-align: center;
- background: rgba(0, 0, 0, .5);
- display: none;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 5px 10px;
+    display: none;
 }
 .portfolio-content:hover .portfolio-info {
 	display: block;
@@ -529,12 +551,19 @@ li.dropdown:has(#toggle-3:checked) > ul {
 	color: #968FF8;
 }
 .portfolio-info p {
-	top: 130px;
+	top: -10px;
 	position: relative;
 	font-size: 15px;
 	text-align: center;
 }
-.portfolio-info h4 {
+.portfolio-info a {
+	bottom: 10px;
+	display: inline;
+	position: relative;
+	float: right;
+	right: 15px;
+}
+.portfolio-info h4, .portfolio-info h5 {
 	text-align: left;
 	background: #519DFF; 
 	max-width: 90px;
@@ -542,10 +571,20 @@ li.dropdown:has(#toggle-3:checked) > ul {
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	padding: 5px 0px 5px 0px;
+	padding: 8px 5px;
 	font-size: 14px;
 	position: relative;
 	left: 5px;
+	border-radius: 10px;
+}
+.portfolio-info h5 {
+   background:rgba(74, 255, 128, 0.9);
+   border-radius: 15px;
+   color: #484848;
+   font-weight: bold;
+   display: inline;
+   top: 10px;
+   float: left;
 }
 
 /*=====Portfolio section end====*/
@@ -796,7 +835,7 @@ color: #968FF8;
 	bottom: 10px;
 	position: fixed;
 	color: #fff;
-	scroll-behaviour: smooth;
+	scroll-behavior: smooth;
 }
 /*====scroll top end ====*/
 
@@ -936,3 +975,191 @@ color: #968FF8;
 	align-self: center;
 }
 /*=====Service details end ====*/
+
+
+/*=====Apps page start ====*/
+.app-page-info {
+	border: 0px solid purple;
+	position: absolute;
+	color: #fff;
+    inset: 0;
+    text-align: center;
+    background: none;
+    border-radius: 5px 10px;
+	display: block;
+}
+.btn-seedetails {
+	border: none;
+	background:rgba(251, 130, 1, 0.885);
+	padding: 10px;
+	border-radius: 12px;
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+}
+.content-seedetails {
+	width: 300px;
+	padding: 15px 0 25px;
+	overflow-y: visible;
+	overflow-x: visible !important;
+	border-radius: 10px;
+	display: none;
+	z-index: 39;
+	position: relative;
+	top: 0px;
+	box-shadow: 0 0 15px rgba(60, 63, 61, 0.95);
+    background: #fff;
+    color: #000;
+	
+}
+.content-seedetails ul {
+	display: grid;
+	text-align: left;
+	gap: 20px;
+}
+.content-seedetails ul li {
+	color: #656669;
+	text-transform: none !important;
+}
+.content-seedetails ul li strong {
+	color: #000;
+	font-weight: bold;
+}
+.content-seedetails ul li:hover {
+	color: #656669 !important;
+}
+.content-seedetails ul li a {
+	position: static;
+	float: none;
+}
+.close-seedetails {
+	color: red;
+	font-size: 33px;
+	float: right;
+	margin: 10px;
+	top: 0;
+	font-family: sans-serif;
+	position: sticky;
+}
+.img-seedetails {
+	width: 42px;
+}
+.img-seedetails:hover {
+	width: 85%;
+}
+.appstore img, .playstore img{
+	width: 90px;
+}
+.appstore-playstore-div {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.appstore, .playstore {
+	border: 0px solid red;
+	display: inline-block;
+}
+/*=====Apps page end ====*/
+
+
+/*==mini-project page start==*/
+.content-sourcecode {
+	width: 330px;
+	height: 360px;
+	overflow-y: scroll;
+	overflow-x: visible !important;
+	border-radius: 10px;
+	display: none;
+	position: absolute;
+	z-index: 999;
+	top: 2px;
+	right: 1px;
+	box-shadow: 0 0 15px rgba(60, 63, 61, 0.95);
+    background: #11172c;
+}
+.btn-sourcecode {
+	border: none;
+	background:rgba(251, 130, 1, 0.885);
+	padding: 7px;
+	border-radius: 12px;
+	color: #000;
+	font-weight: bold;
+	font-size: 14px
+}
+.btn-sourcecode:hover {
+	background: #774c1e;
+}
+.close-sourcecode {
+	color: red;
+	font-size: 33px;
+	float: left;
+	margin: 10px;
+	top: 10px;
+	font-family: sans-serif;
+	position: sticky;
+}
+.codes-tab ul li {
+	display: inline;
+	color: yellow;
+}
+.codes-tab ul li.active {
+	color: green;
+}
+.codes-tab {
+	margin: 30px auto 0;
+	border: 1px solid green;
+	width: 80%;
+}
+.codes-tab ul {
+	display: flex;
+	position: relative;
+	border: 1px solid orange;
+	justify-content: center;
+	justify-self: center;
+	gap: 19px;
+}
+.actual-codes {
+	border: 3px solid #89ab4d;
+	width: 85%;
+	height: 240px;
+	margin: 0 auto 19px;
+	color: #ccc;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#html-code-btn:hover, #css-code-btn:hover, #js-code-btn:hover, #jf {
+	color: rgb(7, 157, 62) !important;
+}
+#css-code-content, #js-code-content {
+	display: none;
+}
+.tab-content {
+	font-size: 10px;
+}
+pre, code {
+	white-space: pre-wrap !important;
+	word-break: break-word !important;
+	overflow-x: hidden !important;
+
+}
+#copy-btn {
+	background-color: #c70fe3bc;
+	color: #e2e8f0;
+	border: 1px solid #334155;
+	padding: 6px 14px;
+	border-radius: 6px;
+	font-size: 13px;
+	font-weight: 500;
+	cursor: pointer;
+    transition: all 0.2s ease;
+	float: left;
+}
+#copy-btn:hover {
+	background-color: #984c099a;
+}
+/*===mini-project page end===*/
+
+.portfolio-item {
+	scroll-margin-top: 120px;
+	scroll-behavior: smooth;
+}

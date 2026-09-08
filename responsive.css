@@ -120,6 +120,10 @@ li.dropdown:has(#toggle-2:checked) > ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }  
+
+.portfolio-item {
+    width: 80%;
+}
  }
 /*===desktop end===*/
 @media screen and (min-width: px){
