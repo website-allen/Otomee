@@ -1,0 +1,287 @@
+/*YT & Tiktok: Coding Otomee */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background: #000000;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    margin-top: -22px;
+    z-index: 99;
+    width: 100%;
+}
+
+.site-name {
+    letter-spacing: 4px;
+    background: linear-gradient(to right bottom, #ffdeb4, #4a7ea0);
+    color: #000;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 22px;
+    padding-top: 10px;
+    z-index: 99;
+}
+
+.container {
+    display: block;
+    height: auto;
+    position: absolute;
+    justify-self: right;
+    border: 0px solid red;
+    top: 15px;
+}
+
+#nav {
+    position: absolute;
+    width: 300px;
+    height: 0px;
+    border-radius: 15px;
+    transition: height 1s;
+    right: 10px;
+    background: linear-gradient(to right bottom, #ffdeb4, #4a7ea0);
+    overflow: hidden;
+    z-index: 99;
+    cursor: pointer;
+}
+
+#label-1 {
+    font-size: 2.4em;
+    line-height: 60px;
+    cursor: pointer;
+    color: #fff;
+    transition: 1s;
+    padding-right: 12px;
+}
+
+#label-2 {
+    color: transparent;
+    margin-left: -40px;
+}
+
+.label-container {
+    margin-top: 0;
+    background: #000;
+    margin-left: 0;
+    height: 57px;
+    width: 100%;
+    display: block;
+    padding-left: 1px;
+}
+
+#toggle {
+    display: none;
+}
+
+#nav > a {
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    color: #000;
+    padding-left: 25px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+nav > a:hover {
+    background: rgb(0, 0, 0,.48);
+    color: #fff;
+    border-left: 5px solid #fff;
+    box-shadow: 0px 10px 10px;
+    padding-left: 40px;
+}
+
+#toggle:checked ~ nav {
+   height: 310px;
+}
+
+#toggle:checked ~ .label-container > #label-1 {
+    color: transparent;
+}
+
+#toggle:checked ~ .label-container > #label-2 {
+   font-size: 2.4em;
+    line-height: 60px;
+    cursor: pointer;
+    color: #fff;
+    transition: 1s;
+    padding-right: 12px;
+}
+
+/*button 1*/
+#btn-1 {
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 18px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.btn-1-body {
+    position: absolute;
+    width: 0;
+    height: 90px;
+    background: transparent;
+    margin-left: 110px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: width 1s;
+}
+
+.btn-1-body > a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    display: block;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.btn-1-body a:hover {
+    background: #000;
+    color: #fff;
+}
+
+#btn-1:hover > .btn-1-body {
+    width: 100px;
+    border: 1px solid black;
+}
+
+/*button 2*/
+#btn-2 {
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 18px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.btn-2-body {
+    position: absolute;
+    width: 0;
+    height: 90px;
+    background: transparent;
+    margin-left: 110px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: width 1s;
+}
+
+.btn-2-body > a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    display: block;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.btn-2-body a:hover {
+    background: #000;
+    color: #fff;
+}
+
+#btn-2:hover > .btn-2-body {
+    width: 100px;
+    border: 1px solid black;
+}
+
+/*toggle switch*/
+
+#night-day-container {
+    width: 20%;
+    padding: 0 0 0 20px;
+    float: right;
+    transition: all 1s ease;
+}
+
+#night-mode {
+    color: #fff;
+    font-size: 2.2em;
+    visibility: hidden;
+}
+
+#day-mode {
+    color: #fff;
+    font-size: 2.2em;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+#night-day-toggle {
+    display: none;
+}
+
+#night-day-toggle:checked ~ #day-mode {
+    visibility: hidden;
+}
+
+#night-day-toggle:checked ~ #night-mode {
+    visibility: visible;
+    cursor: pointer;
+}
+
+body:has(#night-day-toggle:checked) {
+    background: #fff;
+    color: #000;
+}
+
+/*making it responsive*/
+
+@media screen and (min-width: 1024px) {
+    .label-container {
+        display: none;
+    }
+    #nav {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        top: 0px;
+        background: transparent;
+        overflow: visible;
+    }
+    .container {
+        width: 69%;
+        overflow: visible;
+        height: 100%;
+    }
+    #nav > a {
+        display: inline;
+    }
+    .btn-1-top, .btn-2-top {
+        display: inline;
+    }
+    .btn-1-body, .btn-2-body {
+        height: 0;
+        transition: height 1s;
+        top: 60px;
+        margin: 0;
+        z-index: 99;
+        position: absolute;
+        background: linear-gradient(to right bottom, #ffdeb4, #4a7ea0);
+        border-radius: 5px;
+    }
+    #btn-1:hover > .btn-1-body {
+        height: 90px;
+    }
+    #btn-2:hover > .btn-2-body {
+        height: 90px;
+    }
+    
+}
