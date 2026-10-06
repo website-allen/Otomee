@@ -1,229 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Apps developed by Otomee</title>
-	<meta content="" name="description">
-	<meta content="" name="keywords">
-		<!--favicons-->
-	<link rel="icon" type="image/png" href="https://website-allen.github.io/Otomee/images/logo.png">
-    <link rel="apple-touch-icon" href="https://website-allen.github.io/Otomee/apple-touch-icon.png">
-	
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "url": "https://otomee.com.ng/",
-  "logo": "https://otomee.com.ng/images/image-1.jpg"
-}
-</script>
-		<!--fonts-->
-		
-		<!--vendor css files-->
+	<title>Akthomee — Software Developer &amp; Problem Solver</title>
+	<meta content="Portfolio of Alex Rivera, full-stack software developer specializing in React, Node.js and cloud architecture." name="description">
+	<meta content="software developer, full stack, react, node, portfolio" name="keywords">
+
+	<!-- favicons -->
+	<link rel="icon" type="image/png" href="https://akthomee.com.ng/myimages/img-1.jpg">
+    <link rel="apple-touch-icon" href="#">
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Akthomee",
+	  "jobTitle": "Software Developer",
+	  "url": "https://akthomee.com.ng"
+	}
+	</script>
+
+	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
-		
-<!--js file-->
-<script src="js/main.js" defer></script>
-<script src="js/pages.js" defer></script>
-  
-<!-- AOS Library CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-  <!-- AOS Library JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+	<!-- Glightbox -->
+	<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	
+			<!-- ============ JS ============ -->
+ 	<script src="js/script.js" defer></script>
+	<script src="js/apps-page.js" defer></script>
+	<!-- Typed.js -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+	<!-- PureCounter -->
+	<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js" defer></script>
+	<!-- Isotope -->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+	<!-- Swiper -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
 
 
-<!-- Glightbox CSS -->
-<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+      <!-- ============ CSS ============ -->
+<link type="text/css" href="css/style.css" rel="stylesheet">
+<link type="text/css" href="css/responsive.css" rel="stylesheet">
+<link type="text/css" href="css/apps-page.css" rel="stylesheet">	  	  
 
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-<!-- css files-->
-<link href="style.css" rel="stylesheet">
-<link href="responsive.css" rel="stylesheet">	  	
 </head>
 <body class="index-page" id="body">
-    <input type="checkbox" id="toggle">
-		<div class="label-container">
-       <label for="toggle" id="label-1">&#9781; </label>
-       <label for="toggle" id="label-2">&#10005; </label>       
-       </div>
-       
+
+	<!-- ===================== THEME SWITCHER ===================== -->
+	<div class="theme-switcher" role="group" aria-label="Theme switcher">
+		<button type="button" data-theme="day"    title="Day mode"     aria-label="Day mode"><i class="fa-solid fa-sun"></i></button>
+		<button type="button" data-theme="night"  title="Night mode"   aria-label="Night mode" class="active"><i class="fa-solid fa-moon"></i></button>
+		<button type="button" data-theme="forest" title="Forest theme" aria-label="Forest theme"><i class="fa-solid fa-tree"></i></button>
+		<button type="button" data-theme="sunset" title="Sunset theme" aria-label="Sunset theme"><i class="fa-solid fa-mountain-sun"></i></button>
+		<button type="button" data-theme="ocean"  title="Ocean theme"  aria-label="Ocean theme"><i class="fa-solid fa-water"></i></button>
+	</div>
+
+	<!-- ===================== HAMBURGER + HEADER ===================== -->
+	<input type="checkbox" id="toggle">
+	<div class="label-container">
+		<label for="toggle" id="label-1" aria-label="Open menu"><i class="fa-solid fa-bars"></i></label>
+		<label for="toggle" id="label-2" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></label>
+	</div>
+
 	<header id="header">
-		<i class="header-toggle"></i>	
-<br/>	       
+		<i class="header-toggle"></i>
+		<br/>
+
 		<div class="profile-img">
-			<img src="myimages/img-1.jpg" alt="" class="img-fluid"/> 
+			<img src="myimages/img-1.jpg" alt="Akthomee" class="img-fluid"/>
 		</div>
-		
+
 		<a href="index.html" class="sitename-a">
-			<h1 class="sitename">Otomee</h1> 
+			<h1 class="sitename">Akthomee</h1>
 		</a>
-		
+
 		<div class="social-links">
-			<a href="https://x.com/coding_otomee" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-			<a href="https://www.facebook.com/coding.otomee" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-			<a href="https://instagram.com/coding_otomee" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-			<a href="https://www.tiktok.com/@coding_otomee" class="tiktol"><i class="fa-brands fa-tiktok"></i></a>
-			<a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="#" class="github"   aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+			<a href="#" class="twitter"  aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="#" class="linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="#" class="codepen"  aria-label="CodePen"><i class="fa-brands fa-codepen"></i></a>
+			<a href="#" class="stack"    aria-label="Stack Overflow"><i class="fa-brands fa-stack-overflow"></i></a>
 		</div>
-		
+
 		<nav id="navmenu">
 			<ul>
-				<li><a href="#hero" class="active"><i class="fa-regular fa-house"></i>Home</a></li>
-				<li><a href="#about"><i class="fa-regular fa-user"></i>About</a></li>
-				<li><a href="#resume"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
-				<li><a href="#portfolio"><i class="fa-regular fa-images"></i>Portfolio</a></li>
-				<li><a href="#services"><i class="fa-regular fa-compass"></i>Services</a></li>
-				<li class="dropdown"><a href="#"><i class="fa-regular fa-rectangle-list"></i><span>Projects</span> <i class="bi bi-chevron-down"> 
-				</i>
-				<!--drop down toggle-->		
-				<input type="checkbox" id="toggle-2">
-		<div class="label-container-2">
-       <label for="toggle-2" id="label-3">&#9660; </label>
-       <label for="toggle-2" id="label-4">&#9650; </label>       
-       </div>
-				</a>        
-				<ul>
-					<li><a href="websites.html">Websites </a></li>
-					<li class="dropdown"><a href="#"><span>mini-projects </span> <i class="bi bi-chevron-down"></i>
-	<!--deep drop down toggle-->		
-				<input type="checkbox" id="toggle-3">
-		<div class="label-container-3">
-       <label for="toggle-3" id="label-5">&#9660; </label>
-       <label for="toggle-3" id="label-6">&#9650; </label>       
- </div>
+				<li><a href="index.html#hero"><i class="fa-regular fa-house"></i>Home</a></li>
+				<li><a href="index.html#about"><i class="fa-regular fa-user"></i>About</a></li>
+				<li><a href="index.html#resume"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
+				<li><a href="index.html#portfolio"><i class="fa-regular fa-images"></i>Portfolio</a></li>
+				<li><a href="index.html#services"><i class="fa-regular fa-compass"></i>Services</a></li>
+
+				<li class="dropdown">
+					<a href="#">
+						<i class="fa-regular fa-rectangle-list"></i><span>Projects</span>
+						<i class="fa-solid fa-chevron-down" style="margin-left:auto;font-size:.7rem;"></i>
+						<input type="checkbox" id="toggle-2">
+						<div class="label-container-2">
+							<label for="toggle-2" id="label-3">&#9660;</label>
+							<label for="toggle-2" id="label-4">&#9650;</label>
+						</div>
 					</a>
 					<ul>
-						<li><a href="#mini-projects-item1">Digital clock</a></li>
-						<li><a href="#mini-projects-item4">Countdown timer</a></li>
-						<li><a href="#mini-projects-item2">Drop-down nav bar</a></li>
-						<li><a href="#mini-projects-item5">Glowific social icons</a></li>
-						<li><a href="#mini-projects-item3">Basic calculator</a></li>
-						<li><a href="mini-projects.html">See all &rarr;</a></li>					
+						<li><a href="websites.html">Websites</a></li>
+						<li class="dropdown">
+							<a href="#"><span>Mini-projects</span>
+								<i class="fa-solid fa-chevron-down" style="margin-left:auto;font-size:.7rem;"></i>
+								<input type="checkbox" id="toggle-3">
+								<div class="label-container-3">
+									<label for="toggle-3" id="label-5">&#9660;</label>
+									<label for="toggle-3" id="label-6">&#9650;</label>
+								</div>
+							</a>
+							<ul>
+								<li><a href="mini-projects.html#mini-projects-item1">Digital clock</a></li>
+								<li><a href="mini-projects.html#mini-projects-item4">Countdown timer</a></li>
+								<li><a href="mini-projects.html#mini-projects-item2">Drop-down nav bar</a></li>
+								<li><a href="mini-projects.html#mini-projects-item5">Glowific social icons</a></li>
+								<li><a href="mini-projects.html#mini-projects-item3">Basic calculator</a></li>
+								<li><a href="mini-projects.html">See all &rarr;</a></li>
+							</ul>
+						</li>
+						<li><a href="apps.html">Apps</a></li>
+						<li><a href="books.html">Books</a></li>
+						<li><a href="#">Others</a></li>
+						<li><a href="index.html#portfolio">See all projects &rarr;</a></li>
 					</ul>
-					</li>
-					<li><a href="apps.html">Apps</a></li>
-					<li><a href="books.html">Books</a></li>
-					<li><a href="#">others</a></li>
-					<li><a href="#portfolio">See all projects &rarr;</a></li>
-				</ul>
-				</li> &nbsp;
-				<li><a href="#contact"><i class="fa-regular fa-envelope"></i>Contact </a></li>
-				<li><a href="#" style="pointer-events: none; cursor: default; opacity: 0.5;"><i class="fa-regular fa-pen-to-square"></i>Blog </a></li>
+				</li>
+
+				<li><a href="index.html#contact"><i class="fa-regular fa-envelope"></i>Contact</a></li>
+				<li><a href="#" style="pointer-events:none;cursor:default;opacity:.5;"><i class="fa-regular fa-pen-to-square"></i>Blog</a></li>
 			</ul>
 		</nav>
 	</header>
 
-    <!--page title start-->
-<div class="page-title">
-	<div class="container">
-		<h1>Apps</h1> 
-		<nav class="breadcrumbs">
-			<ol>
-				<li><a href="index.html">Home </a></li>
-				<li class="current">/ Apps</li>
-			</ol>
-		</nav>
-	</div> 
-</div>
-<!--page title end-->
-    <!--Apps section start -->
-<section id="portfolio" class="portfolio section">
-	<!--section title start -->
-	<div class="container-section-title" data-aos="fade-up">
-		<h2>Apps</h2>
-		<p>List of some apps that I built</p>
-	</div> <br/><br/>
-    	<!--section title end -->
-<div class="container">
-<div class="isotope-container" data-aos="fade-up" data-aos-delay="200">
-<!--Apps item 1 start-->	
-  <div class="portfolio-item filter-apps isotope-item" id="apps-item1">
-  	  <div class="portfolio-content">
-  	  	<img src="images/apps/fyb-logo.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>App</h5>
-  	   		<h4>FYB Card</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/apps/fyb-logo.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>FYB card maker</li>
-                        <li><strong>Category:</strong>App</li>
-						<li><strong>Version:</strong>1.0</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Client:</strong>class of '26</li>
-                        <li><strong>Description:</strong>This app can create final year brethren cards in one click with its fully customisable templates.</li>
-                        <li><strong>Project date:</strong>20th June, 2026</li>
-                        <li><strong>Download Apk:</strong><a href="#">Click here</a></li>
-
-						<div class="appstore-playstore-div">
-							<a href="#" class="appstore"><img src="images/appstore.png"></a>
-						    <a href="#" class="playstore"><img src="images/Playstore.png"></a>
-						</div>
-
-                    </ul>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--Apps item 1 end-->
-
-<!--Apps item 2 start-->	
-  <div class="portfolio-item filter-apps isotope-item" id="apps-item2">
-  	  <div class="portfolio-content">
-  	  	<img src="images/apps/GoalGrid-logo.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>App</h5>
-  	   		<h4>Goal Grid</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/apps/GoalGrid-logo.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Goal Grid</li>
-                        <li><strong>Category:</strong>App</li>
-						<li><strong>Version:</strong>1.0</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Client:</strong>personal</li>
-                        <li><strong>Description:</strong>This is a modern to-do list app that effectively enables the user to keep track of scheduled tasks, events. </li>
-                        <li><strong>Project date:</strong>20th June, 2026</li>
-                        <li><strong>Download URL:</strong><a href="#">Click here</a></li>
-
-						<div class="appstore-playstore-div">
-							<a href="#" class="appstore"><img src="images/appstore.png"></a>
-						    <a href="#" class="playstore"><img src="images/Playstore.png"></a>
-						</div>
-
-                    </ul>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--Apps item 2 end-->
-
-</div>
-</div>	
-</section>
-<!--Apps section end -->
- <br/><br/><br/>
-<footer id="footer">
-	<div class="container">
-		<div class="copyright"> 
-		 <p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Otomee  &nbsp;</strong>2025-<script>document.write(new Date().getFullYear());</script> |<span>&nbsp;All Rights Reserved</span> </p>
+	<!-- ===================== PAGE TITLE ===================== -->
+	<div class="page-title">
+		<div class="container">
+			<h1>Apps</h1>
+			<nav class="breadcrumbs" aria-label="Breadcrumb">
+				<ol>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">/ Apps</li>
+				</ol>
+			</nav>
 		</div>
-		 <div class="credits">
-		 	Designed and developed by&nbsp;<a href="#">Otomee&nbsp;</a>
-		 </div> 
 	</div>
-</footer>
+
+	<!-- ===================== APPS SECTION ===================== -->
+	<section id="portfolio" class="portfolio section">
+		<div class="container-section-title" data-aos="fade-up">
+			<h2>Apps I've built</h2>
+			<p>Mobile and web apps built with care — from final-year keepsakes to daily productivity tools.</p>
+		</div>
+
+		<div class="container">
+			<div class="isotope-container" data-aos="fade-up" data-aos-delay="100">
+
+				<!-- ===== App 1: FYB Card ===== -->
+				<div class="portfolio-item filter-apps isotope-item" id="apps-item1">
+					<div class="portfolio-content">
+						<img src="images/apps/fyb-logo.png" class="portfolio-image" alt="FYB Card app icon"/>
+						<div class="portfolio-info app-page-info">
+							<span class="portfolio-badge">Mobile App</span>
+							<h4>FYB Card</h4>
+							<p>Design shareable "for your bio" cards in seconds — 40+ themes, GIF support, one-tap export.</p>
+							<button class="see-details" data-modal="modal-fyb">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+							</button>
+						</div>
+					</div>
+				</div>
+
+<hr class="item-hr">
+
+				<!-- ===== App 2: Goal Grid ===== -->
+				<div class="portfolio-item filter-apps isotope-item" id="apps-item2">
+					<div class="portfolio-content">
+						<img src="images/apps/GoalGrid-logo.png" class="portfolio-image" alt="Goal Grid app icon"/>
+						<div class="portfolio-info app-page-info">
+							<span class="portfolio-badge">Productivity</span>
+							<h4>Goal Grid</h4>
+							<p>Offline-first goal tracker with streaks, weekly reviews, and a keyboard-only workflow.</p>
+							<button class="see-details" data-modal="modal-goalgrid">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ===================== MODALS ===================== -->
+
+	<!-- Modal: FYB Card -->
+	<div class="app-modal" id="modal-fyb" role="dialog" aria-modal="true" aria-labelledby="fyb-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/apps/fyb-logo.png" alt="FYB Card icon"/>
+				<div>
+					<h3 id="fyb-title">FYB Card</h3>
+					<span class="app-tagline">Mobile App · v1.0</span>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Developer</strong>Akthomee</li>
+				<li><strong>Client</strong>Class of '26</li>
+				<li><strong>Category</strong>Keepsake / Social</li>
+				<li><strong>Released</strong>20 June 2026</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				FYB Card lets final-year students create beautifully designed "for your bio" cards in one click.
+				Choose from 40+ templates, customise names, colours, and imagery, then export straight to
+				your phone gallery — ready to share on any social platform.
+			</p>
+
+			<div class="app-modal-cta">
+				<a href="#" class="store-btn">
+					<img src="images/appstore.png" alt="App Store"/>
+				</a>
+				<a href="#" class="store-btn">
+					<img src="images/Playstore.png" alt="Play Store"/>
+				</a>
+				<a href="#" class="primary-btn">
+					<i class="fa-solid fa-download"></i> Download APK
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal: Goal Grid -->
+	<div class="app-modal" id="modal-goalgrid" role="dialog" aria-modal="true" aria-labelledby="goalgrid-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/apps/GoalGrid-logo.png" alt="Goal Grid icon"/>
+				<div>
+					<h3 id="goalgrid-title">Goal Grid</h3>
+					<span class="app-tagline">Productivity · v1.0</span>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Developer</strong>Akthomee</li>
+				<li><strong>Client</strong>Personal</li>
+				<li><strong>Category</strong>Productivity</li>
+				<li><strong>Released</strong>20 June 2026</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				Goal Grid is a modern to-do and goal-tracking app that keeps your schedule, events, and
+				long-term objectives in one clean view. Built offline-first, with streak analytics and
+				weekly review summaries to help you stay on track.
+			</p>
+
+			<div class="app-modal-cta">
+				<a href="#" class="store-btn">
+					<img src="images/appstore.png" alt="App Store"/>
+				</a>
+				<a href="#" class="store-btn">
+					<img src="images/Playstore.png" alt="Play Store"/>
+				</a>
+				<a href="#" class="primary-btn">
+					<i class="fa-solid fa-download"></i> Download URL
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<br/><br/><br/>
+
+	<!-- ===================== FOOTER ===================== -->
+	<footer id="footer">
+		<div class="container">
+			<div class="copyright">
+				<p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Akthomee&nbsp;</strong>2025-<script>document.write(new Date().getFullYear());</script> |<span>&nbsp;All Rights Reserved</span></p>
+			</div>
+			<div class="credits">
+				Designed and developed by&nbsp;<a href="#">Akthomee&nbsp;</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- scroll to top -->
+	<a href="#" id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+	<!-- ===================== PAGE-SPECIFIC JS ===================== -->
+	
 </body>
 </html>

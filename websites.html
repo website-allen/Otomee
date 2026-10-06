@@ -1,279 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Websites developed by Otomee</title>
-	<meta content="" name="description">
-	<meta content="" name="keywords">
-		<!--favicons-->
-	<link rel="icon" type="image/png" href="https://website-allen.github.io/Otomee/images/logo.png">
-    <link rel="apple-touch-icon" href="https://website-allen.github.io/Otomee/apple-touch-icon.png">
-	
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "url": "https://otomee.com.ng/",
-  "logo": "https://otomee.com.ng/images/image-1.jpg"
-}
-</script>
-		<!--fonts-->
-		
-		<!--vendor css files-->
+	<title>Akthomee — Software Developer &amp; Problem Solver</title>
+	<meta content="Portfolio of Alex Rivera, full-stack software developer specializing in React, Node.js and cloud architecture." name="description">
+	<meta content="software developer, full stack, react, node, portfolio" name="keywords">
+
+	<!-- favicons -->
+	<link rel="icon" type="image/png" href="https://akthomee.com.ng/myimages/img-1.jpg">
+	<link rel="apple-touch-icon" href="#">
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Akthomee",
+	  "jobTitle": "Software Developer",
+	  "url": "https://akthomee.com.ng"
+	}
+	</script>
+
+	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
-		
-<!--js file-->
-<script src="js/main.js" defer></script>
-<script src="js/pages.js" defer></script>
-  
-<!-- AOS Library CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-  <!-- AOS Library JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-<!-- Glightbox CSS -->
-<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+	<!-- Glightbox -->
+	<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-<!-- css files-->
-<link href="style.css" rel="stylesheet">
-<link href="responsive.css" rel="stylesheet">	  	
+	<!-- Prism.js theme + core + languages (for source-code syntax highlighting) -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js" defer></script>
+
+	<!-- Vendor JS -->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js" defer></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+	<!-- Custom JS -->
+	<script src="js/script.js" defer></script>
+	<script src="js/mini-projects.js" defer></script>
+
+	<!-- CSS -->
+	<link type="text/css" href="css/style.css" rel="stylesheet">
+	<link type="text/css" href="css/responsive.css" rel="stylesheet">
+	<link type="text/css" href="css/mini-projects.css" rel="stylesheet">
 </head>
 <body class="index-page" id="body">
-    <input type="checkbox" id="toggle">
-		<div class="label-container">
-       <label for="toggle" id="label-1">&#9781; </label>
-       <label for="toggle" id="label-2">&#10005; </label>       
-       </div>
-       
+
+	<!-- ===================== THEME SWITCHER ===================== -->
+	<div class="theme-switcher" role="group" aria-label="Theme switcher">
+		<button type="button" data-theme="day"    title="Day mode"     aria-label="Day mode"><i class="fa-solid fa-sun"></i></button>
+		<button type="button" data-theme="night"  title="Night mode"   aria-label="Night mode" class="active"><i class="fa-solid fa-moon"></i></button>
+		<button type="button" data-theme="forest" title="Forest theme" aria-label="Forest theme"><i class="fa-solid fa-tree"></i></button>
+		<button type="button" data-theme="sunset" title="Sunset theme" aria-label="Sunset theme"><i class="fa-solid fa-mountain-sun"></i></button>
+		<button type="button" data-theme="ocean"  title="Ocean theme"  aria-label="Ocean theme"><i class="fa-solid fa-water"></i></button>
+	</div>
+
+	<!-- ===================== HAMBURGER + HEADER ===================== -->
+	<input type="checkbox" id="toggle">
+	<div class="label-container">
+		<label for="toggle" id="label-1" aria-label="Open menu"><i class="fa-solid fa-bars"></i></label>
+		<label for="toggle" id="label-2" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></label>
+	</div>
+
 	<header id="header">
-		<i class="header-toggle"></i>	
-<br/>	       
+		<i class="header-toggle"></i>
+		<br/>
+
 		<div class="profile-img">
-			<img src="myimages/img-1.jpg" alt="" class="img-fluid"/> 
+			<img src="myimages/img-1.jpg" alt="Akthomee" class="img-fluid"/>
 		</div>
-		
+
 		<a href="index.html" class="sitename-a">
-			<h1 class="sitename">Otomee</h1> 
+			<h1 class="sitename">Akthomee</h1>
 		</a>
-		
+
 		<div class="social-links">
-			<a href="https://x.com/coding_otomee" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-			<a href="https://www.facebook.com/coding.otomee" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-			<a href="https://instagram.com/coding_otomee" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-			<a href="https://www.tiktok.com/@coding_otomee" class="tiktol"><i class="fa-brands fa-tiktok"></i></a>
-			<a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="#" class="github"   aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+			<a href="#" class="twitter"  aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="#" class="linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="#" class="codepen"  aria-label="CodePen"><i class="fa-brands fa-codepen"></i></a>
+			<a href="#" class="stack"    aria-label="Stack Overflow"><i class="fa-brands fa-stack-overflow"></i></a>
 		</div>
-		
+
 		<nav id="navmenu">
 			<ul>
-				<li><a href="#hero" class="active"><i class="fa-regular fa-house"></i>Home</a></li>
-				<li><a href="#about"><i class="fa-regular fa-user"></i>About</a></li>
-				<li><a href="#resume"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
-				<li><a href="#portfolio"><i class="fa-regular fa-images"></i>Portfolio</a></li>
-				<li><a href="#services"><i class="fa-regular fa-compass"></i>Services</a></li>
-				<li class="dropdown"><a href="#"><i class="fa-regular fa-rectangle-list"></i><span>Projects</span> <i class="bi bi-chevron-down"> 
-				</i>
-				<!--drop down toggle-->		
-				<input type="checkbox" id="toggle-2">
-		<div class="label-container-2">
-       <label for="toggle-2" id="label-3">&#9660; </label>
-       <label for="toggle-2" id="label-4">&#9650; </label>       
-       </div>
-				</a>        
-				<ul>
-					<li><a href="websites.html">Websites </a></li>
-					<li class="dropdown"><a href="#"><span>mini-projects </span> <i class="bi bi-chevron-down"></i>
-	<!--deep drop down toggle-->		
-				<input type="checkbox" id="toggle-3">
-		<div class="label-container-3">
-       <label for="toggle-3" id="label-5">&#9660; </label>
-       <label for="toggle-3" id="label-6">&#9650; </label>       
- </div>
+				<li><a href="index.html#hero"><i class="fa-regular fa-house"></i>Home</a></li>
+				<li><a href="index.html#about"><i class="fa-regular fa-user"></i>About</a></li>
+				<li><a href="index.html#resume"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
+				<li><a href="index.html#portfolio"><i class="fa-regular fa-images"></i>Portfolio</a></li>
+				<li><a href="index.html#services"><i class="fa-regular fa-compass"></i>Services</a></li>
+
+				<li class="dropdown">
+					<a href="#">
+						<i class="fa-regular fa-rectangle-list"></i><span>Projects</span>
+						<i class="fa-solid fa-chevron-down" style="margin-left:auto;font-size:.7rem;"></i>
+						<input type="checkbox" id="toggle-2">
+						<div class="label-container-2">
+							<label for="toggle-2" id="label-3">&#9660;</label>
+							<label for="toggle-2" id="label-4">&#9650;</label>
+						</div>
 					</a>
 					<ul>
-						<li><a href="#mini-projects-item1">Digital clock</a></li>
-						<li><a href="#mini-projects-item4">Countdown timer</a></li>
-						<li><a href="#mini-projects-item2">Drop-down nav bar</a></li>
-						<li><a href="#mini-projects-item5">Glowific social icons</a></li>
-						<li><a href="#mini-projects-item3">Basic calculator</a></li>
-						<li><a href="mini-projects.html">See all &rarr;</a></li>					
+						<li><a href="websites.html">Websites</a></li>
+						<li class="dropdown">
+							<a href="#"><span>Mini-projects</span>
+								<i class="fa-solid fa-chevron-down" style="margin-left:auto;font-size:.7rem;"></i>
+								<input type="checkbox" id="toggle-3">
+								<div class="label-container-3">
+									<label for="toggle-3" id="label-5">&#9660;</label>
+									<label for="toggle-3" id="label-6">&#9650;</label>
+								</div>
+							</a>
+							<ul>
+								<li><a href="mini-projects.html#mini-projects-item1">Digital clock</a></li>
+								<li><a href="mini-projects.html#mini-projects-item4">Countdown timer</a></li>
+								<li><a href="mini-projects.html#mini-projects-item2">Drop-down nav bar</a></li>
+								<li><a href="mini-projects.html#mini-projects-item5">Glowific social icons</a></li>
+								<li><a href="mini-projects.html#mini-projects-item3">Basic calculator</a></li>
+								<li><a href="mini-projects.html">See all &rarr;</a></li>
+							</ul>
+						</li>
+						<li><a href="apps.html">Apps</a></li>
+						<li><a href="books.html">Books</a></li>
+						<li><a href="#">Others</a></li>
+						<li><a href="index.html#portfolio">See all projects &rarr;</a></li>
 					</ul>
-					</li>
-					<li><a href="apps.html">Apps</a></li>
-					<li><a href="books.html">Books</a></li>
-					<li><a href="#">others</a></li>
-					<li><a href="#portfolio">See all projects &rarr;</a></li>
-				</ul>
-				</li> &nbsp;
-				<li><a href="#contact"><i class="fa-regular fa-envelope"></i>Contact </a></li>
-				<li><a href="#" style="pointer-events: none; cursor: default; opacity: 0.5;"><i class="fa-regular fa-pen-to-square"></i>Blog </a></li>
+				</li>
+
+				<li><a href="index.html#contact"><i class="fa-regular fa-envelope"></i>Contact</a></li>
+				<li><a href="#" style="pointer-events:none;cursor:default;opacity:.5;"><i class="fa-regular fa-pen-to-square"></i>Blog</a></li>
 			</ul>
 		</nav>
 	</header>
 
-    <!--page title start-->
-<div class="page-title">
-	<div class="container">
-		<h1>Websites</h1> 
-		<nav class="breadcrumbs">
-			<ol>
-				<li><a href="index.html">Home </a></li>
-				<li class="current">/ Websites</li>
-			</ol>
-		</nav>
-	</div> 
-</div>
-<!--page title end-->
-    <!--Websites section start -->
-<section id="portfolio" class="portfolio section">
-	<!--section title start -->
-	<div class="container-section-title" data-aos="fade-up">
-		<h2>Websites</h2>
-		<p>Here are some websites that I built</p>
-	</div> <br/><br/>
-    	<!--section title end -->
-<div class="container">
-<div class="isotope-container" data-aos="fade-up" data-aos-delay="200">
-<!--Websites item 1 (game rock) start-->	
-  <div class="portfolio-item filter-apps isotope-item" id="websites-item1">
-  	  <div class="portfolio-content">
-  	  	<img src="images/website/GameRock.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Websites</h5>
-  	   		<h4>GameRock</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                 <ul>
-						<li><img src="images/website/GameRock.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>GameRock</li>
-                        <li><strong>Category:</strong>Websites</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Client:</strong>GameRock</li>
-                        <li><strong>Description:</strong>This is a simple gaming website hosting a few cool games</li>
-                        <li><strong>Project date:</strong>December, 2020</li>
-                        <li><strong>Visit site:</strong><a href="https://gamerock.com.ng">gamerock.com.ng</a></li>
-
-                    </ul>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--Websites item 1 (game rock) end-->
-
-<!--Websites item 2 (nuso jewels) start-->	
-  <div class="portfolio-item filter-apps isotope-item" id="websites-item2">
-  	  <div class="portfolio-content">
-  	  	<img src="images/website/Nuso-jewels.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Websites</h5>
-  	   		<h4>Nuso Jewels</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                 <ul>
-						<li><img src="images/website/Nuso-jewels.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Nuso Jewels</li>
-                        <li><strong>Category:</strong>Websites</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Client:</strong>Yavoe</li>
-                        <li><strong>Description:</strong>A simple jewely website that has it all without much complexities</li>
-                        <li><strong>Project date:</strong>March, 2025</li>
-                        <li><strong>Visit site:</strong><a href="#">nusojewels.com.ng</a></li>
-
-                    </ul>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--Websites item 2 (nuso jewels) end-->
-
-<!--Websites item 3 (SquareMeal) start-->	
-  <div class="portfolio-item filter-apps isotope-item" id="websites-item3">
-  	  <div class="portfolio-content">
-  	  	<img src="images/website/RusticCuisine.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Websites</h5>
-  	   		<h4>Rustic Cuisine</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                 <ul>
-						<li><img src="images/website/RusticCuisine.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>SquareMeal</li>
-                        <li><strong>Category:</strong>Websites</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Client:</strong>Rustic Cuisine</li>
-                        <li><strong>Description:</strong>website for a restaurant in Abraka</li>
-                        <li><strong>Project date:</strong>December, 2020</li>
-                        <li><strong>Visit site:</strong><a href="https://website-allen.github.io/SquareMeal/"> Click here</a></li>
-
-                    </ul>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--Websites item 3 (SquareMeal) end-->
-
-<!--Websites item 4 (Tmonney) start-->	
-  <div class="portfolio-item filter-apps isotope-item" id="websites-item4">
-  	  <div class="portfolio-content">
-  	  	<img src="images/website/Tmonney.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Websites</h5>
-  	   		<h4>Tmonney</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                 <ul>
-						<li><img src="images/website/Tmonney.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Tmonney</li>
-                        <li><strong>Category:</strong>Websites</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Client:</strong>Tobey Dollar</li>
-                        <li><strong>Description:</strong>This is a website for an upcoming artist popularly known by his stage name "Tmonney"</li>
-                        <li><strong>Project date:</strong>October, 2024</li>
-                        <li><strong>Visit site:</strong><a href="https://website-allen.github.io/Tmonney/">Tmonney.com.ng</a></li>
-
-                    </ul>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--Websites item 4 (Tmonney) end-->
-
-
-
-
-
-</div>
-</div>	
-</section>
-<!--Apps section end -->
- <br/><br/><br/>
-<footer id="footer">
-	<div class="container">
-		<div class="copyright"> 
-		 <p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Otomee  &nbsp;</strong>2025-<script>document.write(new Date().getFullYear());</script> |<span>&nbsp;All Rights Reserved</span> </p>
+	<!-- ===================== PAGE TITLE ===================== -->
+	<div class="page-title">
+		<div class="container">
+			<h1>Websites</h1>
+			<nav class="breadcrumbs" aria-label="Breadcrumb">
+				<ol>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">/ Websites</li>
+				</ol>
+			</nav>
 		</div>
-		 <div class="credits">
-		 	Designed and developed by&nbsp;<a href="#">Otomee&nbsp;</a>
-		 </div> 
 	</div>
-</footer>
+
+	<!-- ===================== WEBSITES SECTION ===================== -->
+	<section id="portfolio" class="portfolio section">
+		<div class="container-section-title" data-aos="fade-up">
+			<h2>Websites I've built</h2>
+			<p>Real client sites — from gaming portals to jewellery stores and restaurant menus.</p>
+		</div>
+
+		<div class="container">
+			<div class="isotope-container" data-aos="fade-up" data-aos-delay="100">
+
+				<!-- ===== 1: GameRock ===== -->
+				<div class="portfolio-item filter-website isotope-item" id="websites-item1">
+					<div class="portfolio-content">
+						<img src="images/website/GameRock.png" class="portfolio-image" alt="GameRock preview"/>
+						<div class="portfolio-info app-page-info">
+							<span class="portfolio-badge">Gaming Portal</span>
+							<h4>GameRock</h4>
+							<p>A gaming hub hosting browser-based mini-games with profiles and leaderboards.</p>
+							<button class="see-details" data-modal="modal-gamerock">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- ===== 2: Nuso Jewels ===== -->
+				<div class="portfolio-item filter-website isotope-item" id="websites-item2">
+					<div class="portfolio-content">
+						<img src="images/website/Nuso-jewels.png" class="portfolio-image" alt="Nuso Jewels preview"/>
+						<div class="portfolio-info app-page-info">
+							<span class="portfolio-badge">E-commerce</span>
+							<h4>Nuso Jewels</h4>
+							<p>A refined storefront for a handcrafted jewellery brand — clean, fast, elegant.</p>
+							<button class="see-details" data-modal="modal-nuso">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- ===== 3: Rustic Cuisine ===== -->
+				<div class="portfolio-item filter-website isotope-item" id="websites-item3">
+					<div class="portfolio-content">
+						<img src="images/website/RusticCuisine.png" class="portfolio-image" alt="Rustic Cuisine preview"/>
+						<div class="portfolio-info app-page-info">
+							<span class="portfolio-badge">Restaurant</span>
+							<h4>Rustic Cuisine</h4>
+							<p>Warm restaurant site with menus and reservations for a venue in Abraka.</p>
+							<button class="see-details" data-modal="modal-rustic">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- ===== 4: Tmonney ===== -->
+				<div class="portfolio-item filter-website isotope-item" id="websites-item4">
+					<div class="portfolio-content">
+						<img src="images/website/Tmonney.png" class="portfolio-image" alt="Tmonney preview"/>
+						<div class="portfolio-info app-page-info">
+							<span class="portfolio-badge">Music</span>
+							<h4>Tmonney</h4>
+							<p>A moody, music-first portfolio for an up-and-coming artist.</p>
+							<button class="see-details" data-modal="modal-tmonney">
+								<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ===================== MODALS ===================== -->
+
+	<!-- ===== GameRock ===== -->
+	<div class="app-modal" id="modal-gamerock" role="dialog" aria-modal="true" aria-labelledby="gamerock-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/website/GameRock.png" alt="GameRock"/>
+				<div>
+					<h3 id="gamerock-title">GameRock</h3>
+					<span class="app-tagline">Gaming Portal · Static Site</span>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Client</strong>GameRock</li>
+				<li><strong>Category</strong>Websites</li>
+				<li><strong>Developer</strong>Akthomee</li>
+				<li><strong>Released</strong>December 2020</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				A simple, fast gaming website hosting a collection of browser-based mini-games.
+				Built as a lightweight static experience with a focus on quick loading, clean
+				layout, and easy navigation across game categories.
+			</p>
+
+			<div class="app-modal-cta">
+				<a href="https://gamerock.com.ng" target="_blank" rel="noopener" class="primary-btn">
+					<i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== Nuso Jewels ===== -->
+	<div class="app-modal" id="modal-nuso" role="dialog" aria-modal="true" aria-labelledby="nuso-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/website/Nuso-jewels.png" alt="Nuso Jewels"/>
+				<div>
+					<h3 id="nuso-title">Nuso Jewels</h3>
+					<span class="app-tagline">E-commerce · Jewellery Store</span>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Client</strong>Yavoe</li>
+				<li><strong>Category</strong>Websites</li>
+				<li><strong>Developer</strong>Akthomee</li>
+				<li><strong>Released</strong>March 2025</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				A simple, elegant jewellery website that lets customers browse and enquire about
+				handcrafted pieces without unnecessary complexity. Focused on clarity, product
+				photography, and a smooth mobile experience.
+			</p>
+
+			<div class="app-modal-cta">
+				<a href="#" class="primary-btn">
+					<i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== Rustic Cuisine ===== -->
+	<div class="app-modal" id="modal-rustic" role="dialog" aria-modal="true" aria-labelledby="rustic-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/website/RusticCuisine.png" alt="Rustic Cuisine"/>
+				<div>
+					<h3 id="rustic-title">Rustic Cuisine</h3>
+					<span class="app-tagline">Restaurant · Menu + Reservations</span>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Client</strong>Rustic Cuisine</li>
+				<li><strong>Category</strong>Websites</li>
+				<li><strong>Developer</strong>Akthomee</li>
+				<li><strong>Released</strong>December 2020</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				A warm, welcoming website for a restaurant based in Abraka. Features the menu,
+				opening hours, and a reservation path — designed to work equally well on phones
+				for customers browsing on the go.
+			</p>
+
+			<div class="app-modal-cta">
+				<a href="https://website-allen.github.io/SquareMeal/" target="_blank" rel="noopener" class="primary-btn">
+					<i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===== Tmonney ===== -->
+	<div class="app-modal" id="modal-tmonney" role="dialog" aria-modal="true" aria-labelledby="tmonney-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/website/Tmonney.png" alt="Tmonney"/>
+				<div>
+					<h3 id="tmonney-title">Tmonney</h3>
+					<span class="app-tagline">Music · Artist Portfolio</span>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Client</strong>Tobey Dollar</li>
+				<li><strong>Category</strong>Websites</li>
+				<li><strong>Developer</strong>Akthomee</li>
+				<li><strong>Released</strong>October 2024</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				A moody, music-first website for an upcoming artist known by his stage name
+				"Tmonney". Built to showcase tracks, upcoming gigs, and contact info in a
+				layout that feels as atmospheric as the music itself.
+			</p>
+
+			<div class="app-modal-cta">
+				<a href="https://website-allen.github.io/Tmonney/" target="_blank" rel="noopener" class="primary-btn">
+					<i class="fa-solid fa-arrow-up-right-from-square"></i> Visit site
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- ===================== FOOTER ===================== -->
+	<footer id="footer">
+		<div class="container">
+			<div class="copyright">
+				<p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Akthomee&nbsp;</strong>2025-<script>document.write(new Date().getFullYear());</script> |<span>&nbsp;All Rights Reserved</span></p>
+			</div>
+			<div class="credits">
+				Designed and developed by&nbsp;<a href="#">Akthomee&nbsp;</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- scroll to top -->
+	<a href="#" id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
+
 </body>
 </html>

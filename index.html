@@ -3,810 +3,798 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>Otomee - A web developer</title>
-	<meta content="" name="description">
-	<meta content="" name="keywords">
-		<!--favicons-->
-	<link rel="icon" type="image/png" href="https://website-allen.github.io/Otomee/images/logo.png">
-    <link rel="apple-touch-icon" href="https://website-allen.github.io/Otomee/apple-touch-icon.png">
-	
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "url": "https://otomee.com.ng/",
-  "logo": "https://otomee.com.ng/images/image-1.jpg"
-}
-</script>
-		<!--fonts-->
-		
-		<!--vendor css files-->
+	<title>Akthomee — Software Developer &amp; Problem Solver</title>
+	<meta content="Portfolio of Alex Rivera, full-stack software developer specializing in React, Node.js and cloud architecture." name="description">
+	<meta content="software developer, full stack, react, node, portfolio" name="keywords">
+
+	<!-- favicons -->
+	<link rel="icon" type="image/png" href="https://akthomee.com.ng/myimages/img-1.jpg">
+    <link rel="apple-touch-icon" href="#">
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Akthomee",
+	  "jobTitle": "Software Developer",
+	  "url": "https://akthomee.com.ng"
+	}
+	</script>
+
+	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
-		
-<!--js file-->
-<script src="js/main.js" defer></script>
-  
-<!-- AOS Library CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-  <!-- AOS Library JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-<!-- Glightbox CSS -->
-<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+	<!-- Glightbox -->
+	<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-<!-- css files-->
-<link href="style.css" rel="stylesheet">
-<link href="responsive.css" rel="stylesheet">	  	
-</head>
-<body class="index-page" id="body">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	
+			<!-- ============ JS ============ -->
+ 	<script src="js/script.js" defer></script>
+	<!-- Typed.js -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+	<!-- PureCounter -->
+	<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js" defer></script>
+	<!-- Isotope -->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+	<!-- Swiper -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+
+
+      <!-- ============ CSS ============ -->
+<link type="text/css" href="css/style.css" rel="stylesheet">
+<link type="text/css" href="css/responsive.css" rel="stylesheet">	  
+
+</head>
+
+
+<body class="index-page" id="body">
+
+	<!-- ===================== THEME SWITCHER ===================== -->
+	<div class="theme-switcher" role="group" aria-label="Theme switcher">
+		<button type="button" data-theme="day"    title="Day mode"     aria-label="Day mode"><i class="fa-solid fa-sun"></i></button>
+		<button type="button" data-theme="night"  title="Night mode"   aria-label="Night mode" class="active"><i class="fa-solid fa-moon"></i></button>
+		<button type="button" data-theme="forest" title="Forest theme" aria-label="Forest theme"><i class="fa-solid fa-tree"></i></button>
+		<button type="button" data-theme="sunset" title="Sunset theme" aria-label="Sunset theme"><i class="fa-solid fa-mountain-sun"></i></button>
+		<button type="button" data-theme="ocean"  title="Ocean theme"  aria-label="Ocean theme"><i class="fa-solid fa-water"></i></button>
+	</div>
+
+	<!-- ===================== HAMBURGER + HEADER (same structure as yours) ===================== -->
 	<input type="checkbox" id="toggle">
-		<div class="label-container">
-       <label for="toggle" id="label-1">&#9781; </label>
-       <label for="toggle" id="label-2">&#10005; </label>       
-       </div>
-       
+	<div class="label-container">
+		<label for="toggle" id="label-1" aria-label="Open menu"><i class="fa-solid fa-bars"></i></label>
+		<label for="toggle" id="label-2" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></label>
+	</div>
+
 	<header id="header">
-		<i class="header-toggle"></i>	
-<br/>	       
+		<i class="header-toggle"></i>
+		<br/>
+
 		<div class="profile-img">
-			<img src="myimages/img-1.jpg" alt="" class="img-fluid"/> 
+			<img src="myimages/img-1.jpg" alt="Alex Rivera" class="img-fluid"/>
 		</div>
-		
+
 		<a href="index.html" class="sitename-a">
-			<h1 class="sitename">Otomee</h1> 
+			<h1 class="sitename">Akthomee</h1>
 		</a>
-		
+
 		<div class="social-links">
-			<a href="https://x.com/coding_otomee" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-			<a href="https://www.facebook.com/coding.otomee" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-			<a href="https://instagram.com/coding_otomee" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-			<a href="https://www.tiktok.com/@coding_otomee" class="tiktol"><i class="fa-brands fa-tiktok"></i></a>
-			<a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="#" class="github"   aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+			<a href="#" class="twitter"  aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="#" class="linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="#" class="codepen"  aria-label="CodePen"><i class="fa-brands fa-codepen"></i></a>
+			<a href="#" class="stack"    aria-label="Stack Overflow"><i class="fa-brands fa-stack-overflow"></i></a>
 		</div>
-		
+
 		<nav id="navmenu">
 			<ul>
-				<li><a href="#hero" class="active"><i class="fa-regular fa-house"></i>Home</a></li>
+				<li><a href="#hero"><i class="fa-regular fa-house"></i>Home</a></li>
 				<li><a href="#about"><i class="fa-regular fa-user"></i>About</a></li>
 				<li><a href="#resume"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
 				<li><a href="#portfolio"><i class="fa-regular fa-images"></i>Portfolio</a></li>
 				<li><a href="#services"><i class="fa-regular fa-compass"></i>Services</a></li>
-				<li class="dropdown"><a href="#"><i class="fa-regular fa-rectangle-list"></i><span>Projects</span> <i class="bi bi-chevron-down"> 
-				</i>
-				<!--drop down toggle-->		
-				<input type="checkbox" id="toggle-2">
-		<div class="label-container-2">
-       <label for="toggle-2" id="label-3">&#9660; </label>
-       <label for="toggle-2" id="label-4">&#9650; </label>       
-       </div>
-				</a>        
-				<ul>
-					<li><a href="websites.html">Websites </a></li>
-					<li class="dropdown"><a href="#"><span>mini-projects </span> <i class="bi bi-chevron-down"></i>
-	<!--deep drop down toggle-->		
-				<input type="checkbox" id="toggle-3">
-		<div class="label-container-3">
-       <label for="toggle-3" id="label-5">&#9660; </label>
-       <label for="toggle-3" id="label-6">&#9650; </label>       
- </div>
+
+				<li class="dropdown">
+					<a href="#">
+						<i class="fa-regular fa-rectangle-list"></i><span>Projects</span>
+						<i class="fa-solid fa-chevron-down" style="margin-left:auto;font-size:.7rem;"></i>
+						<!-- drop down toggle -->
+						<input type="checkbox" id="toggle-2">
+						<div class="label-container-2">
+							<label for="toggle-2" id="label-3">&#9660;</label>
+							<label for="toggle-2" id="label-4">&#9650;</label>
+						</div>
 					</a>
 					<ul>
-						<li><a href="#mini-projects-item1">Digital clock</a></li>
-						<li><a href="#mini-projects-item4">Countdown timer</a></li>
-						<li><a href="#mini-projects-item2">Drop-down nav bar</a></li>
-						<li><a href="#mini-projects-item5">Glowific social icons</a></li>
-						<li><a href="#mini-projects-item3">Basic calculator</a></li>
-						<li><a href="mini-projects.html">See all &rarr;</a></li>					
+						<li><a href="websites.html">Websites</a></li>
+						<li class="dropdown">
+							<a href="#"><span>Mini-projects</span>
+								<i class="fa-solid fa-chevron-down" style="margin-left:auto;font-size:.7rem;"></i>
+								<!-- deep dropdown toggle -->
+								<input type="checkbox" id="toggle-3">
+								<div class="label-container-3">
+									<label for="toggle-3" id="label-5">&#9660;</label>
+									<label for="toggle-3" id="label-6">&#9650;</label>
+								</div>
+							</a>
+							<ul>
+								<li><a href="#mini-projects-item1">Digital clock</a></li>
+								<li><a href="#mini-projects-item4">Countdown timer</a></li>
+								<li><a href="#mini-projects-item2">Drop-down nav bar</a></li>
+								<li><a href="#mini-projects-item5">Glowific social icons</a></li>
+								<li><a href="#mini-projects-item3">Basic calculator</a></li>
+								<li><a href="mini-projects.html">See all &rarr;</a></li>
+							</ul>
+						</li>
+						<li><a href="apps.html">Apps</a></li>
+						<li><a href="books.html">Books</a></li>
+						<li><a href="#">Others</a></li>
+						<li><a href="#portfolio">See all projects &rarr;</a></li>
 					</ul>
-					</li>
-					<li><a href="apps.html">Apps</a></li>
-					<li><a href="books.html">Books</a></li>
-					<li><a href="#">others</a></li>
-					<li><a href="#portfolio">See all projects &rarr;</a></li>
-				</ul>
-				</li> &nbsp;
-				<li><a href="#contact"><i class="fa-regular fa-envelope"></i>Contact </a></li>
-				<li><a href="#" style="pointer-events: none; cursor: default; opacity: 0.5;"><i class="fa-regular fa-pen-to-square"></i>Blog </a></li>
+				</li>
+				
+				<li><a href="#contact"><i class="fa-regular fa-envelope"></i>Contact</a></li>
+				<li><a href="#" style="pointer-events:none;cursor:default;opacity:.5;"><i class="fa-regular fa-pen-to-square"></i>Blog</a></li>
 			</ul>
 		</nav>
 	</header>
-	
+
+	<!-- ===================== MAIN ===================== -->
 	<main class="main">
-		<!--Hero section start-->
-<section id="hero">
-  <img src="myimages/img-3.jpg" data-aos="fade-in" />
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <h2>Otomee</h2>
-    <p>
-      I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Writer"></span>
-    </p> 
-  </div>
-</section> 
-  <!--Hero section end-->
- 
-<!--About section start-->
-<section id="about" class="about section">
-    <!--section title start-->	
-<div class="container-section-title" data-aos="fade-up">
-	<h2>About</h2>
-	<p>Hello, my name is Otomee, pronounced as oh-tor-may. I work mainly as a designer, developer, and freelancer, with additional experience in photography and other creative fields. I combine technical skill with creative insight to help clients bring their ideas to life through clear design and functional solutions.
-
- </p>
-    <!--section title end-->	
-<div class="container" data-aos="fade-up" data-aos-delay="100"> 
-	<img src="myimages/img-1.jpg" alt=""/>
-</div>
-
-	<h2>UI/UX Designer &amp; Web Developer. </h2>
-	<p>As a UI/UX designer and developer, I have built a digital career spanning over five years. I’ve worked on projects involving user interface design, user experience improvement, and functional product development. My experience covers design, problem-solving, and practical development skills that help bring ideas from concept to completion. Here are a few details about me:
- </p>
-		<ul data-aos="fade-right">
-			<li><i class="fa fa-angle-right"> </i>
-<strong>Birthday:</strong> <span>nil</span> </li>
-    <li><i class="fa fa-angle-right"> </i>
-<strong>Website:</strong> <span>www.otomee.com</span> </li>
-    <li><i class="fa fa-angle-right"> </i>
-<strong>Phone:</strong> <span>+234 903 542 7684</span> </li>
-    <li><i class="fa fa-angle-right"> </i>
-<strong>City:</strong> <span>Delta state, Nigeria</span> </li>
-			<li><i class="fa fa-angle-right"> </i>
-<strong>Age:</strong> <span>18+</span> </li>
-   <li><i class="fa fa-angle-right"> </i>
-<strong>Degree:</strong> <span>Student</span> </li>
-   <li><i class="fa fa-angle-right"> </i>
-<strong>Email:</strong> <span>aogadje@gmail.com</span> </li>
-   <li><i class="fa fa-angle-right"> </i>
-<strong>Freelance:</strong> <span>Available</span> </li>
-		</ul>
-	
-<p>I am committed to delivering meaningful, practical, and user-focused digital solutions. Every project I take on is handled with attention to detail, clear communication, and a strong focus on quality. My goal is to create work that is satisfactory to client, functional, visually appealing, and valuable to the people who use it.
- </p>
-</div>   
-</section>
-<!--About section end-->
-
-<!--stats section start-->
-<section id="stats" class="stats section">
-	<div class="stats-container" data-aos="fade-up" data-aos-delay="100"> 
-      	<!--stats item 1-->
-	 <div class="stats-item">
-	 	 <i class="fa-regular fa-face-smile"> </i> <span data-purecounter-start="0" data-purecounter-end="19" data-purecounter-duration="1" class="purecounter"></span> 
-	 	<p><strong>Happy Clients
-	 	  </strong> <span>Excellent outcomes
-	   	</span></p>
-	 </div> 
-<!--stats item 2-->
-	 <div class="stats-item">
-	 	 <i class="fa-solid fa-list-check"> </i> <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span> 
-	 	<p><strong>Projects
-	 	  </strong> <span>completed with skill and care
-	   	</span></p>
-	 </div> 
-<!--stats item 3-->
-	 <div class="stats-item">
-	 	 <i class="fa-solid fa-headset"> </i> <span data-purecounter-start="0" data-purecounter-end="44" data-purecounter-duration="1" class="purecounter"></span> 
-	 	<p><strong>Hours of support
-	 	  </strong> <span>always here for help
-	   	</span></p>
-	 </div> 
-<!--stats item 4-->
-	 <div class="stats-item">
-	 	 <i class="fa-solid fa-users"> </i> <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span> 
-	 	<p><strong>Hard workers
-	 	  </strong> <span>dedicated and reliable 
-	   	</span></p>
-	 </div>	 
-	</div>
-</section>
-<!--stats section end-->
-
-<!--skills section start-->
-<section id="skills" class="skills section">
-	<!--section title start-->
-	<div class="container-section-title" data-aos="fade-up">
-		<h2>Skills</h2>
-		<p>Major digital skills in which I am well learned in: HTML, CSS, JavaScript, PHP, and Graphic design. which I use to build and design engaging websites and creative projects.
-
-</p>
-	</div>
- <!--section title end-->
- 
-<div class="container" data-aos="fade-up" data-aos-delay="100">
-	<!--skills item 1 --> 
-<div class="progress">
-	<span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-	<div class="progress-bar-wrap">
-		<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-		</div>
-	</div>
-</div>
-<!--skills item 2 --> 
-<div class="progress">
-	<span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-	<div class="progress-bar-wrap">
-		<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-		</div>
-	</div>
-</div>
-<!--skills item 3 --> 
-<div class="progress">
-	<span class="skill"><span>JAVASCRIPT</span> <i class="val">75%</i></span>
-	<div class="progress-bar-wrap">
-		<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-		</div>
-	</div>
-</div>
-<!--skills item 4 --> 
-<div class="progress">
-	<span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-	<div class="progress-bar-wrap">
-		<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-		</div>
-	</div>
-</div>
-<!--skills item 5 --> 
-<div class="progress">
-	<span class="skill"><span>Wordpress/CMS</span> <i class="val">90%</i></span>
-	<div class="progress-bar-wrap">
-		<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-		</div>
-	</div>
-</div>
-<!--skills item 6 --> 
-<div class="progress">
-	<span class="skill"><span>Graphic design</span> <i class="val">55%</i></span>
-	<div class="progress-bar-wrap">
-		<div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-		</div>
-	</div>
-</div>
-
-</div>
-</section>
-<!--skills section end-->
-
-<!--Resume section start-->
-<section id="resume" class="resume section">
-	  <!--section title start-->
-	<div class="container-section-title" data-aos="fade-up">
-		<h2>Resume</h2>
-		<p>Experienced in various digital roles, I have built a strong foundation in web development, design, and project management. My resume highlights key achievements, educational qualification, professional growth, and relevant skills that demonstrate my expertise and dedication.
-</p>
-	</div>
-	  <!--section title end-->
-	<div class="container" data-aos="fade-up" data-aos-delay="100">
- <!--resume item 1 -->
-		<h3 class="resume-title">Summary</h3>
-		<div class="resume-item">
-			<h4>Otomee</h4>
-			<p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience d3signing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em> </p>
-			<ul>
-				<li>Sapele, Delta state</li>
-				<li>+234 90 354 276 84</li>
-				<li>otomee.com </li>
-			</ul>
-		</div>
- <!--resume item 2 -->
-		<h3 class="resume-title">Education</h3>
-		<div class="resume-item">
-			<h4>Accounting student</h4>
-			<h5>2021 - present</h5>
-			<p><em>Delta state university, Abraka</em> </p>
-		<p>I am in progress pursuing my bachelor's degree in accounting at Delta state university, Abraka.
- </p>
-		</div>
-	<!--resume item 3 -->
-		<div class="resume-item" style="display:none;">
-			<h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-			<h5>2010 - 2014</h5>
-			<p><em>Rochester Institute of Technology, Rochester, NY</em> </p>
-		<p>Earned a Bachelor’s degree in Fine Arts and Graphic Design, gaining comprehensive knowledge in design principles, visual storytelling, and practical skills for creative and professional projects.
- </p>
-		</div>
- <!--resume item 3 -->
- <div data-aos="fade-up" data-aos-delay="200">
-		<h3 class="resume-title">Professional Experience</h3>
-		<div class="resume-item">
-			<h4>Senior web developer</h4>
-			<h5>2019 - Present</h5>
-			<p><em>Sapele, Delta state</em> </p>
-		<ul>
-			<li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-			<li>Delegate tasks to the members of the design team and provide counsel on all aspects of the project.</li>
-			<li>Supervise the assessment of all grapgic materials in order to ensure quality and accuracy of the  design</li>
-			<li>Oversee the efficient use of production projects budgets ranging from $2,000 - $25,000</li>
-		</ul>
-		</div>
- </div>		
- <!--resume item 4 -->
-		<div class="resume-item">
-			<h4>Graphic design specialist</h4>
-			<h5>2019 - present</h5>
-			<p><em>Sapele, Delta state</em> </p>
-		<ul>
-			<li>Developed numerous marketting programs (logos, brochures, infographics, presentations, and advertisements).</li>
-			<li>Managed up to 5projects or tasks at a given time while under pressure </li>
-			<li>Recommended and consulted with clients on the most appropriate graphic design</li>
-			<li>Created 5+ design presentations and proposals a month for clients and account managers </li>
-		</ul>
-		</div>		
-	</div>
-</section>
-<!--Resume section end-->
-
-<!--Portfolio section start -->
-<section id="portfolio" class="portfolio section">
-	<!--section title start -->
-	<div class="container-section-title" data-aos="fade-up">
-		<h2>Portfolio</h2>
-		<p>Showcasing a collection of my creative work, including web design, graphic projects, and digital media, highlighting my skills, style, and professional accomplishments.
-</p>
-	</div> <br/><br/>
-    	<!--section title end -->
-<div class="container">
-<!--portfolio filters start-->
-	<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-		<li data-filter="*" class="filter-active">All</li>
-		<li data-filter=".filter-website">Website</li>
-		<li data-filter=".filter-mini-projects">Mini-projects</li>
-		<li data-filter=".filter-apps">Apps</li>
-		<li data-filter=".filter-books">books</li>
-	</ul>
-<!--portfolio filters end-->
-<div class="isotope-container" data-aos="fade-up" data-aos-delay="200">
-<!--portfolio item 1 start-->	
-  <div class="portfolio-item filter-apps isotope-item">
-  	  <div class="portfolio-content">
-  	  	<img src="images/apps/fyb-logo.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>App</h5>
-  	   		<h4>FYB Card</h4>
-  	   		<p>This app is used to make cool fyb cards</p>
-  	   		<a href="apps.html#apps-item1" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--portfolio item 1 end-->
-
-<!--portfolio item 2 start-->	
-  <div class="portfolio-item filter-apps isotope-item">
-  	  <div class="portfolio-content">
-  	  	<img src="images/apps/GoalGrid-logo.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>App</h5>
-  	   		<h4>GoalGrid</h4>
-  	   		<p>This is a modern to-do list app that effectively helps you keep track of events</p>
-  	   		<a href="apps.html#apps-item2" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 2 end-->
-
-<!--portfolio item 3 start-->	
-  <div class="portfolio-item filter-books isotope-item">
-  	  <div class="portfolio-content">
-  	  	<img src="images/books/50+_dreams.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Book</h5>
-  	   		<h4>50+ dreams interpretation</h4>
-  	   		<p>This is a spiritual teaching book on the interpretations of dreams.</p>
-  	   		<a href="books.html#books-item1" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 3 end-->
-
-<!--portfolio item 4 start-->	
-  <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item1">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/digital-clock.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Digital Clock</h4>
-  	   		<p>This is a simple digital clock made with html, css and javascript</p>
-  	   		<a href="mini-projects.html#mini-projects-item1" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 4 end-->
-
-<!--portfolio item 5 start-->	
-  <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item2">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/drop-down.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>drop-down Nav bar</h4>
-  	   		<p>This is vertical drop-down Nav bar made with only html and css</p>
-  	   		<a href="mini-projects.html#mini-projects-item2" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 5 end-->
-
-<!--portfolio item 6 start-->	
-  <div class="portfolio-item filter-website isotope-item">
-  	  <div class="portfolio-content">
-  	  	<img src="images/website/GameRock.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Website</h5>
-  	   		<h4>Game Rock</h4>
-  	   		<p>This is a gaming website that hosts some cool games</p>
-  	   		<a href="websites.html#websites-item1" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 6 end-->
-
-<!--portfolio item 7 start-->	
-  <div class="portfolio-item filter-website isotope-item">
-  	  <div class="portfolio-content">
-  	  	<img src="images/website/Nuso-jewels.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Website</h5>
-  	   		<h4>Nuso Jewels</h4>
-  	   		<p>This is a simple jewelry website</p>
-  	   		<a href="websites.html#websites-item2" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 7 end-->
-
-<!--portfolio item 8 start-->	
-  <div class="portfolio-item filter-website isotope-item">
-  	  <div class="portfolio-content">
-  	  	<img src="images/website/RusticCuisine.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Website</h5>
-  	   		<h4>Rustic Cuisine</h4>
-  	   		<p>This is a standard restaurant based in Abraka</p>
-  	   		<a href="websites.html#websites-item3" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 8 end-->
-
-<!--portfolio item 9 start-->	
-  <div class="portfolio-item filter-website isotope-item">
-  	  <div class="portfolio-content">
-  	  	<img src="images/website/Tmonney.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Website</h5>
-  	   		<h4>Dj Tmonney</h4>
-  	   		<p>This is a portfolio website of an upcoming musician</p>
-  	   		<a href="websites.html#websites-item4" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 9 end-->
-
-<!--portfolio item 10 start-->	
-  <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item3">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/basic-calculator.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Basic Calculator</h4>
-  	   		<p>This is a basic calculator made with html, css and javascript</p>
-  	   		<a href="mini-projects.html#mini-projects-item3" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 10 end-->
-
-<!--portfolio item 11 start-->	
-  <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item4">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/event-countdown.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Countdown Timer</h4>
-  	   		<p>This is an event countdown timer made with html, css and js</p>
-  	   		<a href="mini-projects.html#mini-projects-item4" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 11 end-->
-
-<!--portfolio item 12 start-->	
-  <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item5">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/reflecting-icons.png" class="portfolio-image" alt=""/>
-  	   	<div class="portfolio-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Neon Reflecting Icons</h4>
-  	   		<p>This gives social icons a neon glowing and reflecting effect </p>
-  	   		<a href="mini-projects.html#mini-projects-item5" title="More Details" class="details-link"><i class="fa-solid fa-link"></i></a>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--porfolio item 12 end-->
-</div>
-</div>	
-</section>
-<!--Portfolio section end -->
-<br/>
-<!--services section start-->
-<services id="services" class="services section">
-	<!--section title start-->
-	<div class="container-section-title" data-aos="fade-up">
-	<h2>Services</h2>
-	<p>I provide a range of professional services, including web design, development, UI/UX design, SEO optimization, website management, and digital media solutions, delivering high-quality work that meets client needs and expectations.
-</p>
-	</div>
-	<!--section title end-->
-	<div class="container">
-	<!--service item 1 start-->
-		<div class="service-item" data-aos="fade-up" data-aos-delay="100">
-			<div class="icon"><i class="fa-solid fa-briefcase"></i>	</div>
-			<div>
-				<h4 class="title"><a href="service-details.html" class="stretched-link">Website design &amp; development</a></h4>
-				 <p class="description">Creating responsive and visually appealing websites tailored to client needs, ensuring seamless functionality and user experience.
-</p> 
-			</div> 
-		</div>
-<!--service item 1 end-->	
-
-<!--service item 2 start-->
-		<div class="service-item" data-aos="fade-up" data-aos-delay="200">
-			<div class="icon"><i class="fa-solid fa-list-check"></i>	</div>
-			<div>
-				<h4 class="title"><a href="service-details.html" class="stretched-link">Project management</a></h4>
-				 <p class="description">Planning, organizing, and overseeing projects to ensure timely delivery, efficient workflow, and successful outcomes.
-</p> 
-			</div> 
-		</div>
-<!--service item 2 end-->	
-
-<!--service item 3 start-->
-		<div class="service-item" data-aos="fade-up" data-aos-delay="300">
-			<div class="icon"><i class="fa-solid fa-chart-simple"></i>	</div>
-			<div>
-				<h4 class="title"><a href="service-details.html" class="stretched-link">Seo optimisation</a></h4>
-				 <p class="description">Improving website visibility on search engines through keyword research, on-page optimization, and effective SEO strategies.
-</p> 
-			</div> 
-		</div>
-<!--service item 3 end-->	
-
-<!--service item 4 start-->
-		<div class="service-item" data-aos="fade-up" data-aos-delay="400">
-			<div class="icon"><i class="fa-solid fa-binoculars"></i>	</div>
-			<div>
-				<h4 class="title"><a href="service-details.html" class="stretched-link">Website management</a></h4>
-				 <p class="description">Maintaining and updating websites regularly to ensure smooth performance, security, and up-to-date content.
-</p> 
-			</div> 
-		</div>
-<!--service item 4 end-->	
-
-<!--service item 5 start-->
-		<div class="service-item" data-aos="fade-up" data-aos-delay="500">
-			<div class="icon"><i class="fa-solid fa-sun"></i>	</div>
-			<div>
-				<h4 class="title"><a href="service-details.html" class="stretched-link">Graphic design</a></h4>
-				 <p class="description">Creating visually appealing graphics, logos, and branding materials that communicate your message effectively.
-</p> 
-			</div> 
-		</div>
-<!--service item 5 end-->	
-
-<!--service item 6 start-->
-		<div class="service-item" data-aos="fade-up" data-aos-delay="600">
-			<div class="icon"><i class="fa-regular fa-calendar"></i>	</div>
-			<div>
-				<h4 class="title"><a href="service-details.html" class="stretched-link">UI/UX design</a></h4>
-				 <p class="description">Designing intuitive and user-friendly interfaces that enhance user experience and engagement across digital platforms.
-</p> 
-			</div> 
-		</div>
-<!--service item 6 end-->	
-	</div>
-</services>
-<!--services section end-->
-<br/>
-<!--Testimonials section start-->
-<section id="testimonials" class="testimonials section">
-	<!--section title start-->
-	<div class="container-section-title">
-		<h2>Testimonials</h2>
-		<p>Hear from my clients about their experiences working with me, showcasing the quality, professionalism, and results of my services.
-</p>
-	</div>
-	<!--section title end-->
-	<div class="container" data-aos="fade-up" data-aos-delay="100">
-		<div class="swiper init-swiper">
-			<div class="swiper-wrapper">
-<!--Testimonial item 1 start-->
-				<div class="swiper-slide">
-					<div class="testimonial-item">
-						<p> <i class="fa-solid fa-quote-left"></i> <span>Working with Otomee was a pleasure. The project was completed on time, with exceptional attention to detail and creativity that exceeded our expectations.</span> <i class="fa-solid fa-quote-right"></i>
-						</p> 
-						 <img src="images/testimonials-1.jpg" class="testimonial-img" alt=""/>
-						 <h3>Saul Goodman</h3>
-						 <h4>Ceo &amp; Founder</h4>
-					</div>
-				</div>
-<!--Testimonial item 1 end -->
-
-<!--Testimonial item 2 start-->
-				<div class="swiper-slide">
-					<div class="testimonial-item">
-						<p> <i class="fa-solid fa-quote-left"></i> <span>Otomee’s expertise in design and development truly transformed our website. Communication was clear, and the results were outstanding.</span> <i class="fa-solid fa-quote-right"></i>
-						</p> 
-						 <img src="images/testimonials-2.jpg" class="testimonial-img" alt=""/>
-						 <h3>Sara Wilson</h3>
-						 <h4>Designer</h4>
-					</div>
-				</div>
-<!--Testimonial item 2 end -->
-
-<!--Testimonial item 3 start-->
-				<div class="swiper-slide">
-					<div class="testimonial-item">
-						<p> <i class="fa-solid fa-quote-left"></i> <span>I highly recommend Otomee for any digital project. Professional, reliable, and innovative, delivering work that makes a real impact</span> <i class="fa-solid fa-quote-right"></i>
-						</p> 
-						 <img src="images/testimonials-3.jpg" class="testimonial-img" alt=""/>
-						 <h3>Jenna Karlis</h3>
-						 <h4>Store Owner</h4>
-					</div>
-				</div>
-<!--Testimonial item 3 end -->
-
-<!--Testimonial item 4 start-->
-				<div class="swiper-slide">
-					<div class="testimonial-item">
-						<p> <i class="fa-solid fa-quote-left"></i> <span>From start to finish, Otomee demonstrated exceptional skill and dedication. The solutions provided were both practical and visually impressive.</span> <i class="fa-solid fa-quote-right"></i>
-						</p> 
-						 <img src="images/testimonials-4.jpg" class="testimonial-img" alt=""/>
-						 <h3>Matt Brandon</h3>
-						 <h4>Freelancer</h4>
-					</div>
-				</div>
-<!--Testimonial item 4 end -->
-
-<!--Testimonial item 5 start-->
-				<div class="swiper-slide">
-					<div class="testimonial-item">
-						<p> <i class="fa-solid fa-quote-left"></i> <span>Collaborating with Otomee was seamless. His creative vision and technical proficiency brought our ideas to life efficiently and beautifully.</span> <i class="fa-solid fa-quote-right"></i>
-						</p> 
-						 <img src="images/testimonials-5.jpg" class="testimonial-img" alt=""/>
-						 <h3>John Larson</h3>
-						 <h4>Entrepreneur</h4>
-					</div>
-				</div>
-<!--Testimonial item 5 end -->
-
+		<!-- ============ HERO — 5 image gallery + overlay ============ -->
+		<section id="hero">
+			<!-- 3-image hero slideshow (fades every 2s) -->
+			<div class="hero-slideshow" aria-hidden="true">
+				<div class="slide active"><img src="myimages/img-3.jpg" alt=""></div>
+				<div class="slide"><img src="myimages/img-4.jpg" alt=""></div>
+				<div class="slide"><img src="myimages/img-5.jpg" alt=""></div>
 			</div>
-			<div class="swiper-pagination"></div>
-		</div>
-	</div>
-</section>
-<!--Testimonials section end-->
 
-<!--contact section start-->
-<section id="contact" class="contact section">
-<!--section title start-->
-<div class="container-section-title" data-aos="fade-up">
-	<h2>Contact</h2> 
-	<p>Get in touch to discuss projects, collaborations, or any inquiries. I’m always ready to connect and provide professional assistance.
-</p>
-</div>	
-<!--section title end-->	
-<div class="container" data-aos="fade-up" data-aos-delay="100">
-	<div class="info-wrap">
-<!--contact item 1 start-->
-		<div class="info-item" data-aos="fade-up" data-aos-delay="200"> <i class="fa-solid fa-location-dot"></i>
-		 <div>
-		  	<h3>Address</h3>
-		  	<p>Sapele, Delta state</p>
-		 </div> 
-		</div>
-<!--contact item 1 end-->		
+			<div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+				<span class="hero-eyebrow"><span class="dot"></span> Available for freelance</span>
+				<h2>Hi, I'm Akthomee.<br/>I build <span class="accent">software</span> that matters.</h2>
+				<p class="hero-sub">A <span class="typed" data-typed-items="Full-Stack Developer, React Specialist, Cloud Architect, UI Engineer, Problem Solver"></span></p>
+				<p class="hero-desc">Six years turning complex problems into clean, scalable, human-centered products. Currently crafting web experiences with React, Node.js and a whole lot of coffee.</p>
+				<div class="hero-actions">
+					<a href="#portfolio" class="btn btn-primary">View my work <i class="fa-solid fa-arrow-right"></i></a>
+					<a href="#contact" class="btn btn-ghost"><i class="fa-regular fa-paper-plane"></i> Get in touch</a>
+				</div>
+			</div>
 
-<!--contact item 2 start-->
-		<div class="info-item" data-aos="fade-up" data-aos-delay="300"> <i class="fa-solid fa-phone"></i>
-		 <div>
-		  	<h3>Call Us</h3>
-		  	<p>+234 90 354 276 84</p>
-		 </div> 
-		</div>
-<!--contact item 2 end-->		
+			<div class="scroll-hint" aria-hidden="true">
+				<span>Scroll</span>
+				<span class="line"></span>
+			</div>
+		</section>
 
-<!--contact item 3 start-->
-		<div class="info-item" data-aos="fade-up" data-aos-delay="400"> <i class="fa-solid fa-envelope"></i>
-		 <div>
-		  	<h3>Email Us</h3>
-		  	<p>aogadje@gmail.com</p>
-		 </div> 
-		</div>
-<!--contact item 3 end-->		
-<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.456973057332!2d3.379206!3d6.455027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b1a5cfb7d9f%3A0x16f5c8e3f34e1f1e!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1698357896543!5m2!1sen!2sng"                                       style="border: 0; width: 100%; height: 230px;"
-  allowfullscreen=""
-  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-	</div> 
+		<!-- ============ ABOUT ============ -->
+		<section id="about" class="about section">
+			<div class="container-section-title" data-aos="fade-up">
+				<h2>About</h2>
+				<p>Hello — I'm Akthomee (pronounced ark-tor-may) but you can call me Thomee. A designer-developer hybrid who cares deeply about the craft, the code, and the humans on the other side of the screen.</p>
+			</div>
+
+			<div class="container about-grid">
+				<!-- 5-image small gallery -->
+				<div class="about-gallery" data-aos="fade-right">
+					<div class="ag"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&h=500&fit=crop" alt="Workspace"></div>
+					<div class="ag"><img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500&h=500&fit=crop" alt="Team"></div>
+					<div class="ag"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500&h=500&fit=crop" alt="Tech"></div>
+					<div class="ag"><img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=500&fit=crop" alt="Setup"></div>
+					<div class="ag"><img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=500&h=500&fit=crop" alt="Mobile"></div>
+				</div>
+
+				<div class="about-text" data-aos="fade-left" data-aos-delay="100">
+					<h3>Full-Stack Developer <span>&amp; UI Engineer.</span></h3>
+					<p>I've spent the better part of the last six years designing and building digital products across web and mobile. My work spans early-stage MVPs for startups to large-scale platforms serving thousands of daily users. I care about performance, accessibility, softwares that solves problems and code that other developers actually enjoy reading.</p>
+
+					<ul class="about-facts">
+						<li><i class="fa-solid fa-angle-right"></i><strong>Location:</strong> Delta State, Nigeria</li>
+
+						<li><i class="fa-solid fa-angle-right"></i><strong>Experience:</strong> 6+ years</li>
+						<li><i class="fa-solid fa-angle-right"></i><strong>Email:</strong>otomee357@gmail.com</li>
+						<li><i class="fa-solid fa-angle-right"></i><strong>Focus:</strong>web and app development</li>
+						<li><i class="fa-solid fa-angle-right"></i><strong>Degree:</strong> BSc</li>
+						<li><i class="fa-solid fa-angle-right"></i><strong>Freelance:</strong> Available</li>
+						<li><i class="fa-solid fa-angle-right"></i><strong>Languages:</strong> EN, PT, ES</li>
+					</ul>
+
+					<p>I'm committed to shipping meaningful work — thoughtfully designed, properly tested, and built to last. Every project gets my full attention, clear communication, and a healthy obsession with the details that make a product feel right.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ STATS ============ -->
+		<section id="stats" class="stats section">
+			<div class="stats-container" data-aos="fade-up" data-aos-delay="100">
+				<div class="stats-item">
+					<i class="fa-regular fa-face-smile"></i>
+					<span data-purecounter-start="0" data-purecounter-end="47" data-purecounter-duration="1" class="purecounter"></span>
+					<p><strong>Happy Clients</strong><span>worldwide &amp; counting</span></p>
+				</div>
+				<div class="stats-item">
+					<i class="fa-solid fa-list-check"></i>
+					<span data-purecounter-start="0" data-purecounter-end="128" data-purecounter-duration="1" class="purecounter"></span>
+					<p><strong>Projects Shipped</strong><span>apps, sites &amp; tools</span></p>
+				</div>
+				<div class="stats-item">
+					<i class="fa-solid fa-headset"></i>
+					<span data-purecounter-start="0" data-purecounter-end="3200" data-purecounter-duration="1" class="purecounter"></span>
+					<p><strong>Hours of Support</strong><span>always here to help</span></p>
+				</div>
+				<div class="stats-item">
+					<i class="fa-solid fa-users"></i>
+					<span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+					<p><strong>Team Members</strong><span>led &amp; mentored</span></p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ SKILLS ============ -->
+		<section id="skills" class="skills section">
+			<div class="container-section-title" data-aos="fade-up">
+				<h2>Skills</h2>
+				<p>The tools I reach for daily. I'm strongest on the JavaScript side of the world, fluent in Python, and comfortable moving between frontend, backend and infrastructure.</p>
+			</div>
+
+			<div class="container skills-wrap" data-aos="fade-up" data-aos-delay="100">
+				<div class="progress">
+					<div class="skill"><span>JavaScript / TypeScript</span> <i class="val">96%</i></div>
+					<div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div></div>
+				</div>
+				<div class="progress">
+					<div class="skill"><span>React &amp; Next.js</span> <i class="val">94%</i></div>
+					<div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div></div>
+				</div>
+				<div class="progress">
+					<div class="skill"><span>Node.js / Express</span> <i class="val">88%</i></div>
+					<div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div>
+				</div>
+				<div class="progress">
+					<div class="skill"><span>Python &amp; Django</span> <i class="val">78%</i></div>
+					<div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div></div>
+				</div>
+				<div class="progress">
+					<div class="skill"><span>PostgreSQL / MongoDB</span> <i class="val">85%</i></div>
+					<div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+				</div>
+				<div class="progress">
+					<div class="skill"><span>Docker &amp; AWS</span> <i class="val">80%</i></div>
+					<div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+				</div>
+				<div class="progress">
+					<div class="skill"><span>UI/UX &amp; Figma</span> <i class="val">82%</i></div>
+					<div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div></div>
+				</div>
+				<div class="progress">
+					<div class="skill"><span>GraphQL &amp; REST</span> <i class="val">90%</i></div>
+					<div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ RESUME ============ -->
+		<section id="resume" class="resume section">
+			<div class="container-section-title" data-aos="fade-up">
+				<h2>Resume</h2>
+				<p>A quick look at where I've been, what I've built, and the education that started it all.</p>
+			</div>
+
+			<div class="container resume-grid" data-aos="fade-up" data-aos-delay="100">
+				<!-- Summary -->
+				<div>
+					<h3 class="resume-title"><i class="fa-solid fa-user-tie"></i> Summary</h3>
+					<div class="resume-item">
+						<h4>Akthomee</h4>
+						<h5>Full-Stack Developer</h5>
+						<p><em>Innovative and deadline-driven developer with 6+ years designing and building user-centered digital products from initial concept to polished, production-ready deliverable.</em></p>
+						<ul>
+							<li>Delta State, Nigeria · Remote-friendly</li>
+							<li>+234 70 489 384 79</li>
+							<li>otomee357@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Education -->
+				<div>
+					<h3 class="resume-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+					<div class="resume-item">
+						<h4>BSc Computer Science</h4>
+						<h5>2015 – 2019</h5>
+						<p><em>DELSU</em></p>
+						<p>Focused on distributed systems, human-computer interaction and software architecture. Graduated with honors and a thesis on real-time collaborative editing.</p>
+					</div>
+					<div class="resume-item">
+						<h4>Full-Stack Web Development</h4>
+						<h5>2019 – 2024</h5>
+						<p><em>Mostly self taught</em></p>
+						<p>Online courses intensive 9-week program covering front end and backend languages. Built and shipped three full applications in teams.</p>
+					</div>
+				</div>
+
+				<!-- Professional Experience -->
+				<div>
+					<h3 class="resume-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h3>
+
+					<div class="resume-item">
+						<h4>Junior Full-Stack Developer</h4>
+						<h5>2022 – 2026</h5>
+						<p><em>Self-employed · Remote</em></p>
+						<ul>
+							<li>Lead the design, development and deployment of a multi-tenant SaaS analytics platform serving 40k+ monthly users.</li>
+							<li>Architected the migration from a monolith to a modular Node.js + React stack, cutting p95 response times by 62%.</li>
+							<li>Mentor four junior developers and run weekly code-review and system-design sessions.</li>
+							<li>Own end-to-end delivery of features from Figma handoff to production monitoring.</li>
+						</ul>
+					</div>
+
+					<div class="resume-item">
+						<h4>Full-Stack Developer</h4>
+						<h5>2026 – present</h5>
+						<p><em>Self-employed</em></p>
+						<ul>
+							<li>Delivered 30+ client projects including e-commerce, fintech dashboards and marketing sites.</li>
+							<li>Built a reusable component library that cut new-project setup time from 2 weeks to 3 days.</li>
+							<li>Introduced automated testing (Jest + Playwright) raising coverage from 8% to 74%.</li>
+							<li>Collaborated directly with designers and stakeholders to shape product direction.</li>
+						</ul>
+					</div>
+
+					<div class="resume-item">
+						<h4>Frontend Developer (Freelance)</h4>
+						<h5>2019 – present</h5>
+						<p><em>Self-employed · Worldwide</em></p>
+						<ul>
+							<li>Built responsive marketing sites and web apps for startups across many countries.</li>
+							<li>Specialized in performance: brought several sites from &gt;4s LCP down to under 1.2s.</li>
+							<li>Handled everything from design to deployment, DNS and ongoing maintenance.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ PORTFOLIO ============ -->
+		<section id="portfolio" class="portfolio section">
+			<div class="container-section-title" data-aos="fade-up">
+				<h2>Portfolio</h2>
+				<p>A selection of projects I've designed, built and shipped. Filter by category or browse the full collection.</p>
+			</div>
+
+			<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+				<li data-filter="*" class="filter-active">All</li>
+				<li data-filter=".filter-website">Websites</li>
+				<li data-filter=".filter-mini-projects">Mini-projects</li>
+				<li data-filter=".filter-apps">Apps</li>
+				<li data-filter=".filter-books">Books</li>
+			</ul>
+
+			<div class="isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+    <!-- Item 1 -->
+    <div class="portfolio-item filter-apps isotope-item">
+        <div class="portfolio-content">
+            <img src="images/apps/fyb-logo.png" class="portfolio-image" alt="FYB Card app"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Mobile App</span>
+                <h4>FYB Card</h4>
+                <p>Design shareable "final year brethren" cards in seconds — 10+ themes, GIF support, and one-tap export.</p>
+                <div class="portfolio-links">
+                    <a href="apps.html#apps-item1" title="see more" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="portfolio-item filter-apps isotope-item">
+        <div class="portfolio-content">
+            <img src="images/apps/GoalGrid-logo.png" class="portfolio-image" alt="GoalGrid app"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Mobile App</span>
+                <h4>GoalGrid</h4>
+                <p>Goal tracker with streak analytics, weekly reviews, and a keyboard-only workflow.</p>
+                <div class="portfolio-links">
+                    <a href="apps.html#apps-item2" title="See more" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="portfolio-item filter-books isotope-item">
+        <div class="portfolio-content">
+            <img src="images/books/50+_dreams.png" class="portfolio-image" alt="50+ dreams book"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Book</span>
+                <h4>50+ Dreams Interpreted</h4>
+                <p>A spiritual enlightenment guide unpacking the symbolism behind some common dreams</p>
+                <div class="portfolio-links">
+                    <a href="books.html#books-item1" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item1">
+        <div class="portfolio-content">
+            <img src="images/mini-projects/digital-clock.png" class="portfolio-image" alt="Digital clock"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Mini-project</span>
+                <h4>Digital Clock</h4>
+                <p>Timezone-aware clock with animated digit transitions and zero dependencies.</p>
+                <div class="portfolio-links">
+                    <a href="mini-projects.html#mini-projects-item1" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item2">
+        <div class="portfolio-content">
+            <img src="images/mini-projects/drop-down.png" class="portfolio-image" alt="Drop-down nav bar"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Mini-project</span>
+                <h4>Drop-down Nav Bar</h4>
+                <p>A fully accessible vertical dropdown navigation built with pure HTML and CSS — no JavaScript.</p>
+                <div class="portfolio-links">
+                    <a href="mini-projects.html#mini-projects-item2" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="portfolio-item filter-website isotope-item">
+        <div class="portfolio-content">
+            <img src="images/website/GameRock.png" class="portfolio-image" alt="Game Rock website"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">website</span>
+                <h4>Game Rock</h4>
+                <p>This is a gaming website that hosts some cool games</p>
+                <div class="portfolio-links">
+                    <a href="websites.html#websites-item1" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 7 -->
+    <div class="portfolio-item filter-website isotope-item">
+        <div class="portfolio-content">
+            <img src="images/website/Nuso-jewels.png" class="portfolio-image" alt="Nuso Jewels website"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Website</span>
+                <h4>Nuso Jewels</h4>
+                <p>A refined storefront for a handcrafted jewellery brand — headless CMS, instant search, Stripe checkout.</p>
+                <div class="portfolio-links">
+                    <a href="websites.html#websites-item2" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 8 -->
+    <div class="portfolio-item filter-website isotope-item">
+        <div class="portfolio-content">
+            <img src="images/website/RusticCuisine.png" class="portfolio-image" alt="Rustic Cuisine website"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Website</span>
+                <h4>Rustic Cuisine</h4>
+                <p>Warm restaurant site with online reservations, seasonal menus and a tiny admin panel for staff.</p>
+                <div class="portfolio-links">
+                    <a href="websites.html#websites-item3" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 9 -->
+    <div class="portfolio-item filter-website isotope-item">
+        <div class="portfolio-content">
+            <img src="images/website/Tmonney.png" class="portfolio-image" alt="DJ Tmonney website"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">website</span>
+                <h4>Tmonney</h4>
+                <p>A moody, music-first portfolio for an up-and-coming DJ — mixes, gigs, and a mailing list that actually converts.</p>
+                <div class="portfolio-links">
+                    <a href="websites.html#websites-item4" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 10 -->
+    <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item3">
+        <div class="portfolio-content">
+            <img src="images/mini-projects/basic-calculator.png" class="portfolio-image" alt="Basic calculator"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Mini-project</span>
+                <h4>Basic Calculator</h4>
+                <p>A simple calculator with minimal js - just clean maths.</p>
+                <div class="portfolio-links">
+                    <a href="mini-projects.html#mini-projects-item3" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 11 -->
+    <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item4">
+        <div class="portfolio-content">
+            <img src="images/mini-projects/event-countdown.png" class="portfolio-image" alt="Countdown timer"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Mini-project</span>
+                <h4>Countdown Timer</h4>
+                <p>A customizable event countdown with animation and full timezone handling.</p>
+                <div class="portfolio-links">
+                    <a href="mini-projects.html#mini-projects-item4" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 12 -->
+    <div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item5">
+        <div class="portfolio-content">
+            <img src="images/mini-projects/reflecting-icons.png" class="portfolio-image" alt="Neon reflecting icons"/>
+            <div class="portfolio-info">
+                <span class="portfolio-badge">Mini-project</span>
+                <h4>Neon Reflecting Icons</h4>
+                <p>A CSS-only effect giving social icons a neon glow and mirrored reflection — 100% GPU-friendly.</p>
+                <div class="portfolio-links">
+                    <a href="mini-projects.html#mini-projects-item5" title="Read case study" class="details-link" aria-label="Read case study">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
-      <br/> <br/>
-<form action="https://api.web3forms.com/submit" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-	<input type="hidden" name="access_key" value="6701ea9f-43f5-4a00-bd35-e13a93a3291b">
-<div>
-	<label for="name-field" class="pb-2">Your Name</label>
-	<input type="text" name="name" id="name-field" class="form-control" required="">
-</div>		
-		
-<div>		
-	 <label for="email-field" class="pb-2">Your Email</label>
-	 <input type="email" class="form-control" name="email" id="email-field" required="">
-</div>	
+		</section>
 
-<div>		
-	 <label for="subject-field" class="pb-2">Subject</label>
-	 <input type="text" class="form-control" name="subject" id="subject-field" required="">
-</div>	
+		<!-- ============ SERVICES ============ -->
+		<section id="services" class="services section">
+			<div class="container-section-title" data-aos="fade-up">
+				<h2>Services</h2>
+				<p>From a blank Figma file to a deployed, monitored product — I cover the whole journey. Here's how I can help.</p>
+			</div>
 
-<div>		
-	 <label for="subject-field" class="pb-2">Message</label>
-	 <textarea class="form-control" name="message" rows="10" id="message-field" required=""> </textarea>
-</div>
-		 	 	 	
-<div>
-	<div class="loading">Loading</div>
-	<div class="error-message"> </div>
-	<div class="sent-message">Your message has been sent. Thank you!</div>
-	<button type="submit">Send Message</button>	
-</div>
-	 	 	 	
-</form>
-</section>
-<!--contact section end-->
+			<div class="services-grid">
+				<div class="service-item" data-aos="fade-up" data-aos-delay="100">
+					<div class="icon"><i class="fa-solid fa-code"></i></div>
+					<div>
+						<h4 class="title"><a href="service-details.html" class="stretched-link">Web Design &amp; Development</a></h4>
+						<p>Responsive, accessible websites built from scratch or from a design file. Performance-first, always.</p>
+					</div>
+				</div>
+
+				<div class="service-item" data-aos="fade-up" data-aos-delay="200">
+					<div class="icon"><i class="fa-solid fa-list-check"></i></div>
+					<div>
+						<h4 class="title"><a href="service-details.html" class="stretched-link">Project Management</a></h4>
+						<p>Planning, scoping and delivery — keeping stakeholders aligned and shipping on time without the drama.</p>
+					</div>
+				</div>
+
+				<div class="service-item" data-aos="fade-up" data-aos-delay="300">
+					<div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
+					<div>
+						<h4 class="title"><a href="service-details.html" class="stretched-link">SEO Optimisation</a></h4>
+						<p>Technical SEO, Core Web Vitals, structured data and content strategy that actually moves rankings.</p>
+					</div>
+				</div>
+
+				<div class="service-item" data-aos="fade-up" data-aos-delay="400">
+					<div class="icon"><i class="fa-solid fa-server"></i></div>
+					<div>
+						<h4 class="title"><a href="service-details.html" class="stretched-link">Website Management</a></h4>
+						<p>Ongoing maintenance, updates, backups and monitoring so your site stays fast, safe and online.</p>
+					</div>
+				</div>
+
+				<div class="service-item" data-aos="fade-up" data-aos-delay="500">
+					<div class="icon"><i class="fa-solid fa-palette"></i></div>
+					<div>
+						<h4 class="title"><a href="service-details.html" class="stretched-link">Graphic Design</a></h4>
+						<p>Logos, brand systems and marketing assets that feel consistent across every touchpoint.</p>
+					</div>
+				</div>
+
+				<div class="service-item" data-aos="fade-up" data-aos-delay="600">
+					<div class="icon"><i class="fa-solid fa-object-group"></i></div>
+					<div>
+						<h4 class="title"><a href="service-details.html" class="stretched-link">UI / UX Design</a></h4>
+						<p>Wireframes, prototypes and polished interfaces designed around real user behaviour and testing.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ TESTIMONIALS ============ -->
+		<section id="testimonials" class="testimonials section">
+			<div class="container-section-title" data-aos="fade-up">
+				<h2>Testimonials</h2>
+				<p>What people I've worked with have to say. Honest words from founders, designers and fellow engineers.</p>
+			</div>
+
+			<div class="container" data-aos="fade-up" data-aos-delay="100">
+				<div class="swiper init-swiper">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="testimonial-item">
+								<p><i class="fa-solid fa-quote-left"></i> Working with Alex was a genuine pleasure. He shipped ahead of schedule and the attention to detail was exceptional — our conversion rate jumped 34% within a month.</p>
+								<img src="https://randomuser.me/api/portraits/men/32.jpg" class="testimonial-img" alt="Saul Goodman"/>
+								<h3>Saul Goodman</h3>
+								<h4>CEO &amp; Founder, Better Call SaaS</h4>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="testimonial-item">
+								<p><i class="fa-solid fa-quote-left"></i> Alex's expertise transformed our entire frontend. Clean code, clear communication and a results-driven mindset. Our team learned a lot just watching him work.</p>
+								<img src="https://randomuser.me/api/portraits/women/44.jpg" class="testimonial-img" alt="Sara Wilson"/>
+								<h3>Sara Wilson</h3>
+								<h4>Lead Designer, Northwind Studio</h4>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="testimonial-item">
+								<p><i class="fa-solid fa-quote-left"></i> I highly recommend Alex for any serious digital project. Reliable, inventive and completely at home across the full stack — a rare find.</p>
+								<img src="https://randomuser.me/api/portraits/women/68.jpg" class="testimonial-img" alt="Jenna Karlis"/>
+								<h3>Jenna Karlis</h3>
+								<h4>Store Owner, Nuso Jewels</h4>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="testimonial-item">
+								<p><i class="fa-solid fa-quote-left"></i> From start to finish, Alex demonstrated exceptional skill and dedication. The solution he delivered was both practical and quietly beautiful.</p>
+								<img src="https://randomuser.me/api/portraits/men/75.jpg" class="testimonial-img" alt="Matt Brandon"/>
+								<h3>Matt Brandon</h3>
+								<h4>Freelancer &amp; Indie Hacker</h4>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="testimonial-item">
+								<p><i class="fa-solid fa-quote-left"></i> Collaborating with Alex was seamless. His creative vision and technical proficiency brought our ideas to life faster than we thought possible.</p>
+								<img src="https://randomuser.me/api/portraits/men/22.jpg" class="testimonial-img" alt="John Larson"/>
+								<h3>John Larson</h3>
+								<h4>Entrepreneur, Flux Labs</h4>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ CONTACT ============ -->
+		<section id="contact" class="contact section">
+			<div class="container-section-title" data-aos="fade-up">
+				<h2>Contact</h2>
+				<p>Have a project, a role, or just a good idea? I'm always open to a conversation. I reply to every message.</p>
+			</div>
+
+			<div class="contact-grid" data-aos="fade-up" data-aos-delay="100">
+				<div class="info-wrap">
+					<div class="info-item">
+						<i class="fa-solid fa-location-dot"></i>
+						<div>
+							<h3>Address</h3>
+							<p>Lisbon, Portugal · Remote worldwide</p>
+						</div>
+					</div>
+
+					<div class="info-item">
+						<i class="fa-solid fa-phone"></i>
+						<div>
+							<h3>Call Me</h3>
+							<p>+351 912 345 678</p>
+						</div>
+					</div>
+
+					<div class="info-item">
+						<i class="fa-solid fa-envelope"></i>
+						<div>
+							<h3>Email Me</h3>
+							<p>alex@rivera.dev</p>
+						</div>
+					</div>
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99546.9!2d-9.1393!3d38.7223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisbon!5e0!3m2!1sen!2spt!4v1700000000000"
+						style="border:0;width:100%;height:200px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+
+				<form action="https://api.web3forms.com/submit" method="post" class="php-email-form">
+					<input type="hidden" name="access_key" value="6701ea9f-43f5-4a00-bd35-e13a93a3291b">
+					<div>
+						<label for="name-field" class="pb-2">Your Name</label>
+						<input type="text" name="name" id="name-field" class="form-control" required>
+					</div>
+					<div>
+						<label for="email-field" class="pb-2">Your Email</label>
+						<input type="email" class="form-control" name="email" id="email-field" required>
+					</div>
+					<div>
+						<label for="subject-field" class="pb-2">Subject</label>
+						<input type="text" class="form-control" name="subject" id="subject-field" required>
+					</div>
+					<div>
+						<label for="message-field" class="pb-2">Message</label>
+						<textarea class="form-control" name="message" rows="6" id="message-field" required></textarea>
+					</div>
+					<div>
+						<div class="loading">Loading…</div>
+						<div class="error-message"></div>
+						<div class="sent-message">Your message has been sent. Thank you!</div>
+						<button type="submit"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+					</div>
+				</form>
+			</div>
+		</section>
 	</main>
-	
-<footer id="footer">
-	<div class="container">
-		<div class="copyright"> 
-		 <p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Otomee  &nbsp;</strong>2025-<script>document.write(new Date().getFullYear());</script> |<span>&nbsp;All Rights Reserved</span> </p>
+
+	<!-- ============ FOOTER ============ -->
+	<footer id="footer">
+		<div class="container">
+			<div class="copyright">
+				<p>© <span>Copyright</span> <strong class="px-1">Alex Rivera</strong> 2025–<script>document.write(new Date().getFullYear());</script> · <span>All Rights Reserved</span></p>
+			</div>
+			<div class="credits">
+				Designed &amp; developed by <a href="#">Alex Rivera</a>
+			</div>
 		</div>
-		 <div class="credits">
-		 	Designed and developed by&nbsp;<a href="#">Otomee&nbsp;</a>
-		 </div> 
-	</div>
-</footer>
+	</footer>
 
-<!--scroll to top start-->
-<a href="#" id="scroll-top"><i  class="fa-solid fa-arrow-up"></i></a>
-<!--scroll to top end-->
+	<!-- scroll to top -->
+	<a href="#" id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+	<!-- preloader -->
+	<div id="preloader"></div>
+
 	
-<!--preloader start-->
-<div id="preloader"> </div>
-<!--preloader end-->
-
-<!--=======Js scripts========-->
-
-<!--typing animation-->						
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-<!--pure counter-->
-<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>	
-
-<!--isotope js-->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-<!-- Isotope -->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-<!-- Glightbox -->
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+	
 </body>
 </html>

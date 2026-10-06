@@ -1,884 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<title>mini-projects</title>
-	<meta content="" name="description">
-	<meta content="" name="keywords">
-		<!--favicons-->
-	<link rel="icon" type="image/png" href="https://website-allen.github.io/Otomee/images/logo.png">
-    <link rel="apple-touch-icon" href="https://website-allen.github.io/Otomee/apple-touch-icon.png">
-	
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "url": "https://otomee.com.ng/",
-  "logo": "https://otomee.com.ng/images/image-1.jpg"
-}
-</script>
-		<!--fonts-->
-		
-		<!--vendor css files-->
+	<title>Akthomee — Software Developer &amp; Problem Solver</title>
+	<meta content="Portfolio of Alex Rivera, full-stack software developer specializing in React, Node.js and cloud architecture." name="description">
+	<meta content="software developer, full stack, react, node, portfolio" name="keywords">
+
+	<!-- favicons -->
+	<link rel="icon" type="image/png" href="https://akthomee.com.ng/myimages/img-1.jpg">
+	<link rel="apple-touch-icon" href="#">
+
+	<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "Akthomee",
+	  "jobTitle": "Software Developer",
+	  "url": "https://akthomee.com.ng"
+	}
+	</script>
+
+	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
-		
-<!--js file-->
-<script src="js/codes.js"> defer</script>
-<script src="js/main.js" defer></script>
-<script src="js/pages.js" defer></script>
-  
-<!-- AOS Library CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-  <!-- AOS Library JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-<!-- Glightbox CSS -->
-<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+	<!-- Glightbox -->
+	<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-<!-- css files-->
-<link href="style.css" rel="stylesheet">
-<link href="responsive.css" rel="stylesheet">
+	<!-- Prism.js theme + core + languages (for source-code syntax highlighting) -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js" defer></script>
 
-      <!--===cdns for view source codes syntax start===-->
-<!--Prism.js Theme CSS e.g tomorrow night or okaidia-->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet"/>
-<!--Prism.js Core Script-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-<!--Component scripts for HTML, CSS, JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
-      <!--===cdns for view source codes syntax end===-->
+	<!-- Vendor JS -->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js" defer></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js" defer></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
 
+	<!-- Custom JS -->
+	<script src="js/script.js" defer></script>
+	<script src="js/mini-projects.js" defer></script>
 
+	<!-- CSS -->
+	<link type="text/css" href="css/style.css" rel="stylesheet">
+	<link type="text/css" href="css/responsive.css" rel="stylesheet">
+	<link type="text/css" href="css/mini-projects.css" rel="stylesheet">
 </head>
 <body class="index-page" id="body">
-    <input type="checkbox" id="toggle">
-		<div class="label-container">
-       <label for="toggle" id="label-1">&#9781; </label>
-       <label for="toggle" id="label-2">&#10005; </label>       
-       </div>
-       
+
+	<!-- ===================== THEME SWITCHER ===================== -->
+	<div class="theme-switcher" role="group" aria-label="Theme switcher">
+		<button type="button" data-theme="day"    title="Day mode"     aria-label="Day mode"><i class="fa-solid fa-sun"></i></button>
+		<button type="button" data-theme="night"  title="Night mode"   aria-label="Night mode" class="active"><i class="fa-solid fa-moon"></i></button>
+		<button type="button" data-theme="forest" title="Forest theme" aria-label="Forest theme"><i class="fa-solid fa-tree"></i></button>
+		<button type="button" data-theme="sunset" title="Sunset theme" aria-label="Sunset theme"><i class="fa-solid fa-mountain-sun"></i></button>
+		<button type="button" data-theme="ocean"  title="Ocean theme"  aria-label="Ocean theme"><i class="fa-solid fa-water"></i></button>
+	</div>
+
+	<!-- ===================== HAMBURGER + HEADER ===================== -->
+	<input type="checkbox" id="toggle">
+	<div class="label-container">
+		<label for="toggle" id="label-1" aria-label="Open menu"><i class="fa-solid fa-bars"></i></label>
+		<label for="toggle" id="label-2" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></label>
+	</div>
+
 	<header id="header">
-		<i class="header-toggle"></i>	
-<br/>	       
+		<i class="header-toggle"></i>
+		<br/>
+
 		<div class="profile-img">
-			<img src="myimages/img-1.jpg" alt="" class="img-fluid"/> 
+			<img src="myimages/img-1.jpg" alt="Akthomee" class="img-fluid"/>
 		</div>
-		
+
 		<a href="index.html" class="sitename-a">
-			<h1 class="sitename">Otomee</h1> 
+			<h1 class="sitename">Akthomee</h1>
 		</a>
-		
+
 		<div class="social-links">
-			<a href="https://x.com/coding_otomee" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-			<a href="https://www.facebook.com/coding.otomee" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-			<a href="https://instagram.com/coding_otomee" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-			<a href="https://www.tiktok.com/@coding_otomee" class="tiktol"><i class="fa-brands fa-tiktok"></i></a>
-			<a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="#" class="github"   aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+			<a href="#" class="twitter"  aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+			<a href="#" class="linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="#" class="codepen"  aria-label="CodePen"><i class="fa-brands fa-codepen"></i></a>
+			<a href="#" class="stack"    aria-label="Stack Overflow"><i class="fa-brands fa-stack-overflow"></i></a>
 		</div>
-		
+
 		<nav id="navmenu">
 			<ul>
-				<li><a href="#hero" class="active"><i class="fa-regular fa-house"></i>Home</a></li>
-				<li><a href="#about"><i class="fa-regular fa-user"></i>About</a></li>
-				<li><a href="#resume"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
-				<li><a href="#portfolio"><i class="fa-regular fa-images"></i>Portfolio</a></li>
-				<li><a href="#services"><i class="fa-regular fa-compass"></i>Services</a></li>
-				<li class="dropdown"><a href="#"><i class="fa-regular fa-rectangle-list"></i><span>Projects</span> <i class="bi bi-chevron-down"> 
-				</i>
-				<!--drop down toggle-->		
-				<input type="checkbox" id="toggle-2">
-		<div class="label-container-2">
-       <label for="toggle-2" id="label-3">&#9660; </label>
-       <label for="toggle-2" id="label-4">&#9650; </label>       
-       </div>
-				</a>        
-				<ul>
-					<li><a href="websites.html">Websites </a></li>
-					<li class="dropdown"><a href="#"><span>mini-projects </span> <i class="bi bi-chevron-down"></i>
-	<!--deep drop down toggle-->		
-				<input type="checkbox" id="toggle-3">
-		<div class="label-container-3">
-       <label for="toggle-3" id="label-5">&#9660; </label>
-       <label for="toggle-3" id="label-6">&#9650; </label>       
- </div>
+				<li><a href="index.html#hero"><i class="fa-regular fa-house"></i>Home</a></li>
+				<li><a href="index.html#about"><i class="fa-regular fa-user"></i>About</a></li>
+				<li><a href="index.html#resume"><i class="fa-regular fa-file-lines"></i>Resume</a></li>
+				<li><a href="index.html#portfolio"><i class="fa-regular fa-images"></i>Portfolio</a></li>
+				<li><a href="index.html#services"><i class="fa-regular fa-compass"></i>Services</a></li>
+
+				<li class="dropdown">
+					<a href="#">
+						<i class="fa-regular fa-rectangle-list"></i><span>Projects</span>
+						<i class="fa-solid fa-chevron-down" style="margin-left:auto;font-size:.7rem;"></i>
+						<input type="checkbox" id="toggle-2">
+						<div class="label-container-2">
+							<label for="toggle-2" id="label-3">&#9660;</label>
+							<label for="toggle-2" id="label-4">&#9650;</label>
+						</div>
 					</a>
 					<ul>
-						<li><a href="#mini-projects-item1">Digital clock</a></li>
-						<li><a href="#mini-projects-item4">Countdown timer</a></li>
-						<li><a href="#mini-projects-item2">Drop-down nav bar</a></li>
-						<li><a href="#mini-projects-item5">Glowific social icons</a></li>
-						<li><a href="#mini-projects-item3">Basic calculator</a></li>
-						<li><a href="mini-projects.html">See all &rarr;</a></li>					
+						<li><a href="websites.html">Websites</a></li>
+						<li class="dropdown">
+							<a href="#"><span>Mini-projects</span>
+								<i class="fa-solid fa-chevron-down" style="margin-left:auto;font-size:.7rem;"></i>
+								<input type="checkbox" id="toggle-3">
+								<div class="label-container-3">
+									<label for="toggle-3" id="label-5">&#9660;</label>
+									<label for="toggle-3" id="label-6">&#9650;</label>
+								</div>
+							</a>
+							<ul>
+								<li><a href="#mini-projects-item1">Digital clock</a></li>
+								<li><a href="#mini-projects-item4">Countdown timer</a></li>
+								<li><a href="#mini-projects-item2">Drop-down nav bar</a></li>
+								<li><a href="#mini-projects-item5">Glowific social icons</a></li>
+								<li><a href="#mini-projects-item3">Basic calculator</a></li>
+								<li><a href="mini-projects.html">See all &rarr;</a></li>
+							</ul>
+						</li>
+						<li><a href="apps.html">Apps</a></li>
+						<li><a href="books.html">Books</a></li>
+						<li><a href="#">Others</a></li>
+						<li><a href="index.html#portfolio">See all projects &rarr;</a></li>
 					</ul>
-					</li>
-					<li><a href="apps.html">Apps</a></li>
-					<li><a href="books.html">Books</a></li>
-					<li><a href="#">others</a></li>
-					<li><a href="#portfolio">See all projects &rarr;</a></li>
-				</ul>
-				</li> &nbsp;
-				<li><a href="#contact"><i class="fa-regular fa-envelope"></i>Contact </a></li>
-				<li><a href="#" style="pointer-events: none; cursor: default; opacity: 0.5;"><i class="fa-regular fa-pen-to-square"></i>Blog </a></li>
+				</li>
+
+				<li><a href="index.html#contact"><i class="fa-regular fa-envelope"></i>Contact</a></li>
+				<li><a href="#" style="pointer-events:none;cursor:default;opacity:.5;"><i class="fa-regular fa-pen-to-square"></i>Blog</a></li>
 			</ul>
 		</nav>
 	</header>
 
-    <!--page title start-->
-<div class="page-title">
-	<div class="container">
-		<h1>Apps</h1> 
-		<nav class="breadcrumbs">
-			<ol>
-				<li><a href="index.html">Home </a></li>
-				<li class="current">/ Mini-projects</li>
-			</ol>
-		</nav>
-	</div> 
-</div>
-<!--page title end-->
-    <!--Mini-project section start -->
-<section id="portfolio" class="portfolio section">
-	<!--section title start -->
-	<div class="container-section-title" data-aos="fade-up">
-		<h2>Mini-projects</h2>
-		<p>Here are some cool mini-projects spanning easy and simple ones to highly technical.</p>
-	</div> <br/><br/>
-    	<!--section title end -->
-<div class="container">
-<div class="all-mini-projects isotope-container" data-aos="fade-up" data-aos-delay="200">
-<!--=====Mini-project item 1 (digital clock) start=====-->	
-  <div class="portfolio-item filter-apps isotope-item" id="mini-projects-item1">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/digital-clock.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Digital clock</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/digital-clock.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Digital clock</li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS, Js</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description:</strong>This is a simple js digital clock that shows the current time and updates every second. Great for practicing DOM manipulation and setInterval().</li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-							<li id="js-code-btn" class="js-code-btn" onclick="switchCodes()">Js</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block" data-src=" sourcecodes\miniprojects\digitalclock\index.html">html code here...
-                                  
-								</code></pre>
-                               
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\digitalclock\style.css">css code here ... 
-                                  
-                            </code></pre>
-						</div>
-                  <!--css code end-->
- 
-				  <!--js code start-->
-						<div id="js-code-content" class="tab-content js-code-content">
-							<pre><code class="language-javascript" id="code-block" data-src=" sourcecodes\miniprojects\digitalclock\script.js">js code here .... 
-                             
-                            </code></pre>
-						</div>
-						<!--js code end-->
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 1 (digital clock) end=====-->
-
-<!--=====Mini-project item 2 (drop-down nav bar) start=====-->
-<div class="portfolio-item filter-apps isotope-item" id="mini-projects-item2">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/drop-down.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>drop-down nav bar</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/drop-down.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>drop-down nav bar  </li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description:</strong>A clean, responsive website navigation bar featuring smooth hover-activated dropdown menus for organized multi-level link structuring, styled entirely with modern CSS.</li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block" data-src=" sourcecodes\miniprojects\dropdown-navbar\index.html">html code here...
-									
-	
-								</code></pre>
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\dropdown-navbar\style.css">css code here ... 
-								
-							</code></pre>
-						</div>
-                  <!--css code end-->
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 2 (drop-down nav bar) end=====-->
-
-<!--=====Mini-project item 3 (basic calc) start=====-->
-<div class="portfolio-item filter-apps isotope-item" id="mini-projects-item3">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/basic-calculator.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Basic calculator</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/basic-calculator.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Basic calculator</li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS, Js</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description:</strong>A clean, responsive desktop calculator built with HTML, CSS, and JavaScript, featuring real-time input display, basic arithmetic operations, and smooth interactive button feedback.</li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-							<li id="js-code-btn" class="js-code-btn" onclick="switchCodes()">Js</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block" data-src=" sourcecodes\miniprojects\basiccalculator\index.html">html code here...
-                            
-								</code></pre>
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\basiccalculator\style.css">css code here ... 
-
-								 </code></pre>
-						</div>
-						<!--css code end-->
-
-                        <!--js code start-->
-
-						<div id="js-code-content" class="tab-content js-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\basiccalculator\script.js">js code here ... 
-
-								 </code></pre>
-						</div>
-						<!--js code end-->
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 3 (basic calc) end=====-->
-
-<!--=====Mini-project item 4 (event timer) start=====-->
-<div class="portfolio-item filter-apps isotope-item" id="mini-projects-item4">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/event-countdown.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>countdown timer</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/event-countdown.png" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Countdown timer</li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS, Js</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description:</strong>A modern, responsive event countdown timer built with HTML, CSS, and JavaScript that dynamically tracks and displays remaining days, hours, minutes, and seconds until your target date.</li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-							<li id="js-code-btn" class="js-code-btn" onclick="switchCodes()">Js</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block"  data-src=" sourcecodes\miniprojects\countdown_timer\index.html">html code here...
-                                    	
-	
-								</code></pre>
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\countdown_timer\style.css">css code here ... 
-								
-							</code></pre>
-						</div>
-                  <!--css code end-->
-
-				  <!--js code start-->
-						<div id="js-code-content" class="tab-content js-code-content">
-							<pre><code class="language-javascript" id="code-block" data-src=" sourcecodes\miniprojects\countdown_timer\script.js">js code here .... 
-								
-							</code></pre>
-						</div>
-						<!--js code end-->
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 4 (event timer) end=====-->
-
-<!--=====Mini-project item  5(glowing icon) start=====-->
-<div class="portfolio-item filter-apps isotope-item" id="mini-projects-item5">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/reflecting-icons.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Digital clock</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/reflecting-icons.png"  class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Glowific icons</li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description: A sleek, modern social media icon set featuring glowing neon borders, ambient hover reflections, and custom color accents, built using pure HTML and CSS.</strong></li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block" data-src=" sourcecodes\miniprojects\glowific_icons\index.html">html code here...
-                                    
-								</code></pre>
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\glowific_icons\style.css">css code here ... 
-
-							</code></pre>
-						</div>
-                  <!--css code end-->
-
-				  
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 5(glowing icon) end=====-->
-
-<!--=====Mini-project item 6(image carousel) start=====-->
-<div class="portfolio-item filter-apps isotope-item" id="mini-projects-item6">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/image-carousel.png" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Image carousel</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/image-carousel.png"  class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>image carousel</li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS, Js</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description:</strong> A responsive image slider built with HTML, CSS, and JavaScript that features smooth manual navigation buttons and clean structural layouts for showcasing photo galleries.</li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-                            <li id="js-code-btn" class="js-code-btn" onclick="switchCodes()">Js</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block" data-src=" sourcecodes\miniprojects\image_carousel\index.html">html code here...
-                                   
-								</code></pre>
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\image_carousel\style.css">css code here ... 
-                                
-								</code></pre>
-						</div>
-						<!--css code end-->
-
-                        <!--js code start-->
-
-						<div id="js-code-content" class="tab-content js-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\image_carousel\script.js">css code here ... 
-                                
-								</code></pre>
-						</div>
-						<!--js code end-->
-
-				  
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 6(image carousel) end=====-->
-
-<!--=====Mini-project item 7(analogue clock) start=====-->
-<div class="portfolio-item filter-apps isotope-item" id="mini-projects-item7">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>analogue clock</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Analogue clock</li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS, Js</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description:</strong>A sleek, interactive analog clock built with HTML, CSS, and JavaScript that features real-time rotating clock hands, custom-positioned numerical markers, and a synchronized digital time display.</li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-							<li id="js-code-btn" class="js-code-btn" onclick="switchCodes()">Js</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block" data-src=" sourcecodes\miniprojects\analogue_clock\index.html">html code here...
-
-								</code></pre>
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\analogue_clock\style.css">css code here ...
-                               
-                            </code></pre>
-						</div>
-                  <!--css code end-->
-
-				  <!--js code start-->
-						<div id="js-code-content" class="tab-content js-code-content">
-							<pre><code class="language-javascript" id="code-block" data-src=" sourcecodes\miniprojects\analogue_clock\script.js">js code here .... 
-                                
-                            </code></pre>
-						</div>
-						<!--js code end--> 
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 7(analogue clock) end=====-->
-
-<!--=====Mini-project item 8(testimonial) start=====-->
-<div class="portfolio-item filter-apps isotope-item" id="mini-projects-item8">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>testimonial</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Testimonial</li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS, Js</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description:</strong>A responsive testimonial section built with HTML, CSS, and JavaScript that features sliding client reviews, interactive pagination dots, and navigation controls.</li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-							<li id="js-code-btn" class="js-code-btn" onclick="switchCodes()">Js</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block" data-src=" sourcecodes\miniprojects\testimonial\index.html">html code here...
-                                    
-                                   
-								</code></pre>
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\testimonial\style.css">css code here ...
-                                                           
-
-                            </code></pre>
-						</div>
-                  <!--css code end-->
-
-				  <!--js code start-->
-						<div id="js-code-content" class="tab-content js-code-content">
-							<pre><code class="language-javascript" id="code-block" data-src=" sourcecodes\miniprojects\testimonial\script.js">js code here .... 
-                                
-                            </code></pre>
-						</div>
-						<!--js code end--> 
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 8(testimonial) end=====-->
-
-<!--=====Mini-project item 9(isotope) start=====-->
-<div class="portfolio-item filter-apps isotope-item" id="mini-projects-item9">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Isotope</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Isotope filter</li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS, Js</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description:</strong>A responsive filterable grid built with HTML, CSS, and vanilla JavaScript that seamlessly toggles and sorts item categories without relying on external libraries.</li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-							<li id="js-code-btn" class="js-code-btn" onclick="switchCodes()">Js</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block" data-src=" sourcecodes\miniprojects\isotope_filter\index.html">html code here...
-                                                                                                       
-								</code></pre>
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\isotope_filter\style.css">css code here ...
-                               
-                                  
-                            </code></pre>
-						</div>
-						<!--css code end-->
-
-
-                        <!--js code start-->
-
-						<div id="js-code-content" class="tab-content js-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\isotope_filter\script.js">js code here ...
-                               
-                                  
-                            </code></pre>
-						</div>
-						<!--js code end--> 
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 9(isotope) end=====-->
-
-<!--=====Mini-project item 10(neon loader) start=====-->
-<div class="portfolio-item filter-apps isotope-item" id="mini-projects-item10">
-  	  <div class="portfolio-content">
-  	  	<img src="images/mini-projects/" class="portfolio-image" alt=""/>
-  	   	 <div class="portfolio-info app-page-info">
-			<h5>Mini-projects</h5>
-  	   		<h4>Neon loader</h4>
-  	   		<button class="btn-seedetails">See Details</button>
-            <div class="content-seedetails">
-                <span class="close-seedetails">x</span>
-	                <h3>Project information</h3>
-					
-	                <ul>
-						<li><img src="images/mini-projects/" class="img-seedetails" alt=""/> </li>
-                        <li><strong>Name:</strong>Neon loader</li>
-                        <li><strong>Category:</strong>Mini-projects</li>
-						<li><strong>Developer:</strong>Otomee</li>
-                        <li><strong>Languages:</strong>HTML, CSS</li>
-						<li><strong>tutorial video:</strong><a href="#">watch YT video</a></li>
-                        <li><strong>Description:</strong>A striking neon loader collection featuring vibrant glowing rings and orbiting animations, built using pure HTML and CSS.</li>
-                    </ul>
-					<button class="btn-sourcecode">View sourcecode</button>
-					<div class="content-sourcecode">
-					<span class="close-sourcecode">x</span> 
-
-					<div class="codes-tab">
-						<ul>
-							<li id="html-code-btn" class="html-code-btn" onclick="switchCodes()">Html</li>
-							<li id="css-code-btn" class="css-code-btn" onclick="switchCodes()">Css</li>
-						</ul>
-
-					</div>
-<button id="copy-btn" onclick="copyCode()">copy</button>
-					<div class="actual-codes">
-
-						
-						
-						<!--Html code start-->
-						<div id="html-code-content" class="tab-content html-code-content">   
-								<pre><code class="language-html" id="code-block" data-src=" sourcecodes\miniprojects\neon_loader\index.html">html code here...
-                                    
-                                                    
-								</code></pre>
-						</div>
-						<!--Html code end-->
-
-						<!--css code start-->
-
-						<div id="css-code-content" class="tab-content css-code-content">
-							<pre><code class="language-css" id="code-block" data-src=" sourcecodes\miniprojects\neon_loader\style.css">css code here ...
-                                                   
-                            </code></pre>
-						</div>
-                  <!--css code end-->
-
-				  
-						
-					</div>
-
-					</div>
-            </div>
-  	  	 </div>
-  	  	</div>
-  	</div>
-<!--=====Mini-project item 10(neon loader) end=====-->
-
-</div>
-</div>	
-</section>
-<!--mini-project section end -->
- <br/><br/><br/>
-<footer id="footer">
-	<div class="container">
-		<div class="copyright"> 
-		 <p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Otomee  &nbsp;</strong>2025-<script>document.write(new Date().getFullYear());</script> |<span>&nbsp;All Rights Reserved</span> </p>
+	<!-- ===================== PAGE TITLE ===================== -->
+	<div class="page-title">
+		<div class="container">
+			<h1>Mini-projects</h1>
+			<nav class="breadcrumbs" aria-label="Breadcrumb">
+				<ol>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">/ Mini-projects</li>
+				</ol>
+			</nav>
 		</div>
-		 <div class="credits">
-		 	Designed and developed by&nbsp;<a href="#">Otomee&nbsp;</a>
-		 </div> 
 	</div>
-</footer>
+
+	<!-- ===================== MINI-PROJECTS SECTION ===================== -->
+	<section id="portfolio" class="portfolio section">
+		<div class="container-section-title" data-aos="fade-up">
+			<h2>Mini-projects</h2>
+			<p>Small, self-contained builds — mostly vanilla HTML, CSS and JavaScript. Nothing but clean code.</p>
+		</div>
+
+		<div class="container">
+			<div class="isotope-container" data-aos="fade-up" data-aos-delay="100">
+
+				<!-- ===== 1: Digital Clock ===== -->
+				<div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item1">
+					<div class="portfolio-content">
+						<img src="images/mini-projects/digital-clock.png" class="portfolio-image" alt="Digital Clock preview"/>
+						<div class="portfolio-info app-page-info">
+							<div class="info-top">
+								<span class="portfolio-badge">Vanilla JS</span>
+							</div>
+							<div class="info-bottom">
+								<h4>Digital Clock</h4>
+								<p>Timezone-aware clock with animated digit transitions — under 4 KB, zero dependencies.</p>
+								<button class="see-details" data-modal="modal-clock">
+									<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+								</button>
+							</div>
+						</div>
+					</div>
+					<hr class="item-hr">
+				</div>
+
+				<!-- ===== 2: Countdown Timer ===== -->
+				<div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item4">
+					<div class="portfolio-content">
+						<img src="images/mini-projects/event-countdown.png" class="portfolio-image" alt="Countdown Timer preview"/>
+						<div class="portfolio-info app-page-info">
+							<div class="info-top">
+								<span class="portfolio-badge">Vanilla JS</span>
+							</div>
+							<div class="info-bottom">
+								<h4>Countdown Timer</h4>
+								<p>Customizable event countdown with flip-digit animation and full timezone handling.</p>
+								<button class="see-details" data-modal="modal-countdown">
+									<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+								</button>
+							</div>
+						</div>
+					</div>
+					<hr class="item-hr">
+				</div>
+
+				<!-- ===== 3: Drop-down Nav Bar ===== -->
+				<div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item2">
+					<div class="portfolio-content">
+						<img src="images/mini-projects/drop-down.png" class="portfolio-image" alt="Drop-down nav bar preview"/>
+						<div class="portfolio-info app-page-info">
+							<div class="info-top">
+								<span class="portfolio-badge">CSS Only</span>
+							</div>
+							<div class="info-bottom">
+								<h4>Drop-down Nav Bar</h4>
+								<p>A fully accessible vertical dropdown navigation built with pure HTML and CSS — no JS.</p>
+								<button class="see-details" data-modal="modal-dropdown">
+									<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+								</button>
+							</div>
+						</div>
+					</div>
+					<hr class="item-hr">
+				</div>
+
+				<!-- ===== 4: Glowific Social Icons ===== -->
+				<div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item5">
+					<div class="portfolio-content">
+						<img src="images/mini-projects/reflecting-icons.png" class="portfolio-image" alt="Neon reflecting icons preview"/>
+						<div class="portfolio-info app-page-info">
+							<div class="info-top">
+								<span class="portfolio-badge">CSS Only</span>
+							</div>
+							<div class="info-bottom">
+								<h4>Glowific Social Icons</h4>
+								<p>A CSS-only treatment giving social icons a neon glow and mirrored reflection.</p>
+								<button class="see-details" data-modal="modal-glow">
+									<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+								</button>
+							</div>
+						</div>
+					</div>
+					<hr class="item-hr">
+				</div>
+
+				<!-- ===== 5: Basic Calculator ===== -->
+				<div class="portfolio-item filter-mini-projects isotope-item" id="mini-projects-item3">
+					<div class="portfolio-content">
+						<img src="images/mini-projects/basic-calculator.png" class="portfolio-image" alt="Basic calculator preview"/>
+						<div class="portfolio-info app-page-info">
+							<div class="info-top">
+								<span class="portfolio-badge">Vanilla JS</span>
+							</div>
+							<div class="info-bottom">
+								<h4>Basic Calculator</h4>
+								<p>A keyboard-friendly calculator with calculation history — no libraries, just clean maths.</p>
+								<button class="see-details" data-modal="modal-calc">
+									<i class="fa-solid fa-arrow-up-right-from-square"></i> See details
+								</button>
+							</div>
+						</div>
+					</div>
+					<hr class="item-hr">
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ===================== MODALS ===================== -->
+
+	<!-- ===== Digital Clock ===== -->
+	<div class="app-modal" id="modal-clock" role="dialog" aria-modal="true" aria-labelledby="clock-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/mini-projects/digital-clock.png" alt="Digital Clock"/>
+				<div>
+					<h3 id="clock-title">Digital Clock</h3>
+					<span class="app-tagline">Vanilla JS · HTML + CSS + JS</span>
+				</div>
+			</div>
+
+			<div class="source-block">
+				<button class="toggle-source" type="button" aria-expanded="false">
+					<i class="fa-solid fa-code"></i>
+					<span class="toggle-label">Show source code</span>
+					<i class="fa-solid fa-chevron-down chev"></i>
+				</button>
+				<div class="source-dropdown">
+					<div class="codes-tab" data-tabs>
+						<div class="codes-tab-tabs">
+							<button class="active" data-tab="html">HTML</button>
+							<button data-tab="css">CSS</button>
+							<button data-tab="js">JS</button>
+						</div>
+						<div class="actual-codes">
+							<button id="copy-btn" type="button">Copy</button>
+							<pre class="tab-content active" data-tab-content="html"><code class="language-html" data-src="sourcecodes/miniprojects/digitalclock/index.html"></code></pre>
+							<pre class="tab-content" data-tab-content="css"><code class="language-css" data-src="sourcecodes/miniprojects/digitalclock/style.css"></code></pre>
+							<pre class="tab-content" data-tab-content="js"><code class="language-js" data-src="sourcecodes/miniprojects/digitalclock/script.js"></code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Category</strong>Mini-project</li>
+				<li><strong>Stack</strong>HTML, CSS, JS</li>
+				<li><strong>Size</strong>&lt; 4 KB</li>
+				<li><strong>Dependencies</strong>None</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				A minimal timezone-aware digital clock with smooth animated digit transitions.
+				The whole thing fits in a single file, works offline, and uses the Intl API
+				to respect the user's locale.
+			</p>
+		</div>
+	</div>
+
+	<!-- ===== Countdown Timer ===== -->
+	<div class="app-modal" id="modal-countdown" role="dialog" aria-modal="true" aria-labelledby="countdown-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/mini-projects/event-countdown.png" alt="Countdown Timer"/>
+				<div>
+					<h3 id="countdown-title">Countdown Timer</h3>
+					<span class="app-tagline">Vanilla JS · HTML + CSS + JS</span>
+				</div>
+			</div>
+
+			<div class="source-block">
+				<button class="toggle-source" type="button" aria-expanded="false">
+					<i class="fa-solid fa-code"></i>
+					<span class="toggle-label">Show source code</span>
+					<i class="fa-solid fa-chevron-down chev"></i>
+				</button>
+				<div class="source-dropdown">
+					<div class="codes-tab" data-tabs>
+						<div class="codes-tab-tabs">
+							<button class="active" data-tab="html">HTML</button>
+							<button data-tab="css">CSS</button>
+							<button data-tab="js">JS</button>
+						</div>
+						<div class="actual-codes">
+							<button id="copy-btn" type="button">Copy</button>
+							<pre class="tab-content active" data-tab-content="html"><code class="language-html" data-src="sourcecodes/miniprojects/countdown_timer/index.html"></code></pre>
+							<pre class="tab-content" data-tab-content="css"><code class="language-css" data-src="sourcecodes/miniprojects/countdown_timer/style.css"></code></pre>
+							<pre class="tab-content" data-tab-content="js"><code class="language-js" data-src="sourcecodes/miniprojects/countdown_timer/script.js"></code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Category</strong>Mini-project</li>
+				<li><strong>Stack</strong>HTML, CSS, JS</li>
+				<li><strong>Features</strong>Flip digits, timezone</li>
+				<li><strong>Dependencies</strong>None</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				A customizable event countdown with animated flip digits and full timezone support.
+				Set a target date and the component handles the rest — years, days, hours,
+				minutes and seconds all recalculate in real time.
+			</p>
+		</div>
+	</div>
+
+	<!-- ===== Drop-down Nav Bar ===== -->
+	<div class="app-modal" id="modal-dropdown" role="dialog" aria-modal="true" aria-labelledby="dropdown-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/mini-projects/drop-down.png" alt="Drop-down nav bar"/>
+				<div>
+					<h3 id="dropdown-title">Drop-down Nav Bar</h3>
+					<span class="app-tagline">CSS Only · No JavaScript</span>
+				</div>
+			</div>
+
+			<div class="source-block">
+				<button class="toggle-source" type="button" aria-expanded="false">
+					<i class="fa-solid fa-code"></i>
+					<span class="toggle-label">Show source code</span>
+					<i class="fa-solid fa-chevron-down chev"></i>
+				</button>
+				<div class="source-dropdown">
+					<div class="codes-tab" data-tabs>
+						<div class="codes-tab-tabs">
+							<button class="active" data-tab="html">HTML</button>
+							<button data-tab="css">CSS</button>
+						</div>
+						<div class="actual-codes">
+							<button id="copy-btn" type="button">Copy</button>
+							<pre class="tab-content active" data-tab-content="html"><code class="language-html" data-src="sourcecodes/miniprojects/dropdown-navbar/index.html"></code></pre>
+							<pre class="tab-content" data-tab-content="css"><code class="language-css" data-src="sourcecodes/miniprojects/dropdown-navbar/style.css"></code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Category</strong>Mini-project</li>
+				<li><strong>Stack</strong>HTML, CSS only</li>
+				<li><strong>Accessibility</strong>Keyboard-friendly</li>
+				<li><strong>Dependencies</strong>None</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				A vertical dropdown navigation built without a single line of JavaScript.
+				It uses :has() and hidden checkboxes to toggle submenus, respects reduced-motion,
+				and works with keyboard navigation out of the box.
+			</p>
+		</div>
+	</div>
+
+	<!-- ===== Glowific Social Icons ===== -->
+	<div class="app-modal" id="modal-glow" role="dialog" aria-modal="true" aria-labelledby="glow-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/mini-projects/reflecting-icons.png" alt="Glowific icons"/>
+				<div>
+					<h3 id="glow-title">Glowific Social Icons</h3>
+					<span class="app-tagline">CSS Only · Neon + Reflection</span>
+				</div>
+			</div>
+
+			<div class="source-block">
+				<button class="toggle-source" type="button" aria-expanded="false">
+					<i class="fa-solid fa-code"></i>
+					<span class="toggle-label">Show source code</span>
+					<i class="fa-solid fa-chevron-down chev"></i>
+				</button>
+				<div class="source-dropdown">
+					<div class="codes-tab" data-tabs>
+						<div class="codes-tab-tabs">
+							<button class="active" data-tab="html">HTML</button>
+							<button data-tab="css">CSS</button>
+						</div>
+						<div class="actual-codes">
+							<button id="copy-btn" type="button">Copy</button>
+							<pre class="tab-content active" data-tab-content="html"><code class="language-html" data-src="sourcecodes/miniprojects/glowific_icons/index.html"></code></pre>
+							<pre class="tab-content" data-tab-content="css"><code class="language-css" data-src="sourcecodes/miniprojects/glowific_icons/style.css"></code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Category</strong>Mini-project</li>
+				<li><strong>Stack</strong>HTML, CSS</li>
+				<li><strong>Effect</strong>Neon glow + mirror</li>
+				<li><strong>Performance</strong>GPU-accelerated</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				A CSS-only treatment that gives social icons a neon glow and a mirrored reflection
+				beneath them. Every effect is done with box-shadow, filter: drop-shadow(),
+				and a ::after reflection — no images, no JavaScript.
+			</p>
+		</div>
+	</div>
+
+	<!-- ===== Basic Calculator ===== -->
+	<div class="app-modal" id="modal-calc" role="dialog" aria-modal="true" aria-labelledby="calc-title">
+		<div class="app-modal-inner">
+			<button class="app-modal-close" data-close aria-label="Close">✕</button>
+
+			<div class="app-modal-header">
+				<img src="images/mini-projects/basic-calculator.png" alt="Basic calculator"/>
+				<div>
+					<h3 id="calc-title">Basic Calculator</h3>
+					<span class="app-tagline">Vanilla JS · HTML + CSS + JS</span>
+				</div>
+			</div>
+
+			<div class="source-block">
+				<button class="toggle-source" type="button" aria-expanded="false">
+					<i class="fa-solid fa-code"></i>
+					<span class="toggle-label">Show source code</span>
+					<i class="fa-solid fa-chevron-down chev"></i>
+				</button>
+				<div class="source-dropdown">
+					<div class="codes-tab" data-tabs>
+						<div class="codes-tab-tabs">
+							<button class="active" data-tab="html">HTML</button>
+							<button data-tab="css">CSS</button>
+							<button data-tab="js">JS</button>
+						</div>
+						<div class="actual-codes">
+							<button id="copy-btn" type="button">Copy</button>
+							<pre class="tab-content active" data-tab-content="html"><code class="language-html" data-src="sourcecodes/miniprojects/basiccalculator/index.html"></code></pre>
+							<pre class="tab-content" data-tab-content="css"><code class="language-css" data-src="sourcecodes/miniprojects/basiccalculator/style.css"></code></pre>
+							<pre class="tab-content" data-tab-content="js"><code class="language-js" data-src="sourcecodes/miniprojects/basiccalculator/script.js"></code></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="app-modal-meta">
+				<li><strong>Category</strong>Mini-project</li>
+				<li><strong>Stack</strong>HTML, CSS, JS</li>
+				<li><strong>Features</strong>Keyboard support, history</li>
+				<li><strong>Dependencies</strong>None</li>
+			</ul>
+
+			<p class="app-modal-desc">
+				A keyboard-friendly calculator with a running calculation history.
+				Everything from basic arithmetic to parentheses is handled with a
+				small expression parser — no eval(), no libraries.
+			</p>
+		</div>
+	</div>
+
+	<!-- ===================== FOOTER ===================== -->
+	<footer id="footer">
+		<div class="container">
+			<div class="copyright">
+				<p>©&nbsp;<span>Copyright&nbsp;</span> <strong class="px-1">Akthomee&nbsp;</strong>2025-<script>document.write(new Date().getFullYear());</script> |<span>&nbsp;All Rights Reserved</span></p>
+			</div>
+			<div class="credits">
+				Designed and developed by&nbsp;<a href="#">Akthomee&nbsp;</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- scroll to top -->
+	<a href="#" id="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></a>
+
 </body>
 </html>
