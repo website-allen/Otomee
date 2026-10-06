@@ -1,0 +1,298 @@
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* ---------- ≤ 1080px ---------- */
+@media (max-width: 1080px) {
+	.about-grid {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+	.skills-wrap {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+	.contact-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ---------- ≤ 900px ---------- */
+@media (max-width: 900px) {
+	.stats-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.isotope-container {
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 22px;
+	}
+}
+
+/* ---------- ≤ 720px ---------- */
+@media (max-width: 720px) {
+	.theme-switcher {
+		top: 12px;
+		right: 12px;
+		padding: 5px 7px;
+		gap: 4px;
+	}
+	.theme-switcher button {
+		width: 28px;
+		height: 28px;
+		font-size: .72rem;
+	}
+
+	.label-container {
+		top: 12px;
+		left: 12px;
+		width: 42px;
+		height: 42px;
+	}
+	#label-1,
+	#label-2 {
+		font-size: 1.15rem;
+	}
+
+	#toggle:checked ~ #header {
+		width: 88vw;
+		max-width: 340px;
+	}
+
+	.section {
+		padding: 70px 0;
+	}
+	.about-facts {
+		grid-template-columns: 1fr;
+	}
+
+	.stats-container {
+		grid-template-columns: 1fr 1fr;
+		gap: 16px;
+	}
+	.stats-item {
+		padding: 22px 16px;
+	}
+	.stats-item .purecounter {
+		font-size: 1.9rem;
+	}
+
+	#hero {
+		padding-top: 78px;
+	}
+	.hero-actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.btn {
+		justify-content: center;
+	}
+	.scroll-hint {
+		display: none;
+	}
+}
+
+/* ---------- ≤ 600px ---------- */
+@media (max-width: 600px) {
+	.isotope-container {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		padding: 0 18px;
+	}
+	.portfolio-item {
+		max-width: 100%;
+	}
+	.portfolio-info {
+		padding: 18px;
+	}
+	.portfolio-info h4 {
+		font-size: 1.08rem;
+	}
+}
+
+/* ---------- ≤ 480px ---------- */
+@media (max-width: 480px) {
+	.stats-container {
+		grid-template-columns: 1fr;
+	}
+
+	.about-gallery {
+		aspect-ratio: auto;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.about-gallery .ag:nth-child(1) {
+		grid-column: span 2;
+	}
+	.about-gallery .ag:nth-child(5) {
+		grid-column: span 2;
+	}
+}
+
+/* ============================================================
+   DESKTOP — horizontal top navbar instead of vertical drawer
+   ============================================================ */
+@media (min-width: 1000px) {
+    .theme-switcher {
+		top: 80px;        /* 68px header + 12px breathing room */
+		left: 18px;
+        right: auto;
+	}
+
+	/* 1. Turn the sidebar into a full-width top bar */
+	#header {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		min-height: 68px;
+		padding: 10px 24px;
+		flex-direction: row;
+		align-items: center;
+		gap: 24px;
+		border-right: 0;
+		border-bottom: 1px solid var(--border);
+		overflow: visible;              /* no scrollbar */
+	}
+
+	/* Force it to stay open — the checkbox is ignored on desktop */
+	#toggle,
+	.label-container { display: none; }
+
+	/* Content is always fully visible (no fade-on-check) */
+	#header > * { opacity: 1 !important; transition: none; }
+
+	/* 2. Shrink the profile image — it's a bar now, not a card */
+	.profile-img {
+		width: 42px;
+		height: 42px;
+		margin-bottom: 0;
+		flex-shrink: 0;
+		padding: 2px;
+	}
+
+	/* 3. Site name sits next to the avatar, left-aligned */
+	.sitename-a {
+		justify-content: flex-start;
+		flex-shrink: 0;
+	}
+	.sitename {
+		font-size: 1.15rem;
+		margin: 0;
+	}
+
+	/* 4. Social links shrink to a compact inline row */
+	.social-links {
+		margin: 0;
+		gap: 6px;
+		flex-shrink: 0;
+	}
+	.social-links a {
+		width: 32px;
+		height: 32px;
+		font-size: .82rem;
+		border-radius: 9px;
+	}
+
+	/* 5. Nav menu becomes a horizontal flex row */
+	#navmenu {
+		width: auto;
+		flex: 0 0 auto;
+		display: flex;
+		justify-content: center;
+        min-width: 0;
+		flex: 1 1 auto;
+	}
+	#navmenu > ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 6px 8px;
+		width: auto;  
+	}
+
+	#navmenu ul li {
+		width: auto;
+		position: relative;
+	}
+
+	/* 6. Top-level links look like pill tabs, not sidebar rows */
+	#navmenu ul li > a {
+		padding: 8px 14px;
+		border-radius: 10px;
+		border-left: 0;
+		font-size: .86rem;
+		gap: 8px;
+	}
+	#navmenu ul li > a i:first-child {
+		width: auto;
+		font-size: .92rem;
+	}
+	#navmenu ul li > a:hover,
+	#navmenu ul li > a.active {
+		background: var(--surface-2);
+		border-left: 0;
+		color: var(--text);
+	}
+
+	/* 7. Dropdowns become absolute-positioned popovers */
+	#navmenu ul ul,
+	#navmenu ul ul ul {
+		position: absolute;
+		top: calc(100% + 8px);
+		left: 0;
+		width: 250px;
+		max-height: 0;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		background: var(--surface);
+		border: 1px solid var(--border);
+		border-radius: 14px;
+		box-shadow: var(--shadow-sm);
+		border-left: 0;
+		z-index: 200;
+		transition: max-height .35s ease, opacity .25s ease;
+		opacity: 0;
+        z-index: 500;
+        overflow: visible;
+	}
+
+	/* Nested submenu pops out to the side instead of below */
+	#navmenu ul ul ul {
+		left: 24px;
+        top: 30px;
+        z-index: 999;
+	}
+
+	/* Open states */
+	li.dropdown:has(#toggle-2:checked) > ul {
+		max-height: 420px;
+		padding: 8px 0;
+		opacity: 1;
+	}
+	li.dropdown ul li.dropdown:has(#toggle-3:checked) > ul {
+		max-height: 340px;
+		padding: 8px 0;
+		opacity: 1;
+	}
+
+	/* Submenu link styling for the popover look */
+	#navmenu ul ul li > a,
+	#navmenu ul ul ul li > a {
+		padding: 9px 16px;
+		border-radius: 0;
+		font-size: .84rem;
+	}
+	#navmenu ul ul ul li > a::before { left: 6px; }
+
+	/* 8. Toggle arrow buttons sit inside the popover parents */
+	.label-container-2 { top: 8px; right: 8px; }
+	.label-container-3 { top: 6px; right: 8px; }
+}
+
+/* Optional: nudge page content so it doesn't sit under the top bar */
+@media (min-width: 1025px) {
+	.main { padding-top: 68px; }
+	#hero { min-height: calc(100vh - 68px); }
+}
