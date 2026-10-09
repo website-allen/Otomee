@@ -56,22 +56,6 @@
    The grid defines column width; items flow into as many
    columns as fit. No more max-width stretch.
    ============================================================ */
-#portfolio .isotope-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 32px 28px;
-	width: 100%;
-	max-width: 1200px;
-	margin: 25px auto;
-	padding: 0 24px;
-	box-shadow: none;
-	border-radius: 0;
-	border: 0;
-	overflow: visible;
-	max-height: none;
-	align-items: stretch;
-}
-
 #portfolio .portfolio-item {
 	width: 100%;
 	max-width: 100%;
@@ -98,14 +82,6 @@
 	transform: translateY(-6px);
 	border-color: var(--primary);
 	box-shadow: 0 22px 40px -20px var(--primary);
-}
-
-#portfolio .portfolio-image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
-	transition: transform .6s cubic-bezier(.2,.8,.2,1);
 }
 #portfolio .portfolio-content:hover .portfolio-image { transform: scale(1.06); }
 
@@ -461,37 +437,9 @@
    RESPONSIVE
    ============================================================ */
 
-/* Tablet — 2 columns max, tighter gaps */
-@media (max-width: 1024px) {
-	#portfolio .isotope-container {
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		gap: 26px 22px;
-	}
-}
-
-/* Small tablet — 2 columns, smaller cards */
-@media (max-width: 900px) {
-	#portfolio .isotope-container {
-		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-		gap: 24px 20px;
-		padding: 0 20px;
-	}
-	#portfolio .portfolio-content {
-		aspect-ratio: 4 / 3;
-	}
-}
-
 /* Mobile — single column, wider cards */
 @media (max-width: 640px) {
-	#portfolio .isotope-container {
-		grid-template-columns: 1fr;
-		gap: 28px;
-		padding: 0 16px;
-	}
-	#portfolio .portfolio-content {
-		aspect-ratio: 4 / 3;
-		border-radius: 18px;
-	}
+	
 	.app-page-info { padding: 16px; }
 	.app-page-info h4 { font-size: 1.05rem; }
 	.app-page-info p { font-size: .8rem; }
